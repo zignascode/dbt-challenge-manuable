@@ -6,4 +6,5 @@ SELECT
   SAFE_CAST(order_date AS DATE) AS order_date, -- Forzar a fecha, sino arroja null
   LOWER(TRIM(status)) AS order_status -- Limpiar espacios y convertir a minúsculas
 FROM {{ source('raw','orders') }} -- Fuente de datos
-WHERE order_id IS NOT NULL; --garantiza que no haya registros de ids nulos
+WHERE order_id IS NOT NULL --garantiza que no haya registros de ids nulos
+ORDER BY order_id

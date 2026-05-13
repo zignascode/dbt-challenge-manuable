@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw   # nombre del dataset en BigQuery
+    tables:
+      - name: orders
+      - name: customers
+      - name: products
+      - name: order_items

@@ -7,3 +7,4 @@ SELECT
 FROM {{ source('raw','customers') }}
 WHERE customer_id IS NOT NULL
 AND name IS NOT NULL
+ORDER BY customer_id
