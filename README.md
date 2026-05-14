@@ -17,8 +17,9 @@ Archivo de credenciales JSON (dbt-challenge-manuable-XXXX.json) configurado en p
 3. Generar y descargar el archivo JSON.
 4. Guardarlo en la carpeta Credentials/ con el nombre dbt-challenge.json.
 5. Actualizar profiles.yml para apuntar a esa ruta.
-
-Airflow 3.2.1 instalado en entorno Linux/WSL.
+6. Airflow 3.2.1 instalado en entorno Linux/WSL.
+7. Poblar las tablas del dataset raw, copiando el script en BigQuery
+dataset_raw.sql
 
 # Estructura del proyecto
 models/
