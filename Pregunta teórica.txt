@@ -1,0 +1,7 @@
+3.2 Pregunta teórica (5 pts) 
+Responde en máximo 150 palabras: 
+¿Qué estrategia usarías para manejar tablas grandes en BigQuery (más de 500 
+millones de filas) dentro de tus modelos dbt? Menciona al menos dos conceptos 
+específicos de dbt o BigQuery que aplicarías.
+
+Al trabajar con tablas muy grandes en BigQuery (más de 500 millones de filas), la prioridad es reducir el volumen procesado en cada ejecución. Una primera estrategia es usar modelos incrementales en dbt, que actualizan solo los datos nuevos o modificados en lugar de recalcular toda la tabla completa. Esto evita escaneos innecesarios y hace que las cargas sean más rápidas y baratas. La segunda estrategia es aprovechar las tablas particionadas y agrupadas en BigQuery, que dividen la información por fechas o categorías y permiten consultar únicamente los segmentos relevantes. Además, conviene crear etapas intermedias con datos filtrados o resumidos, para que los modelos finales trabajen sobre conjuntos más pequeños y precisos. En conjunto, estas prácticas garantizan eficiencia, menor costo y escalabilidad en proyectos con datos masivos.
