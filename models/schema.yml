@@ -6,7 +6,6 @@ sources:
     schema: raw   # nombre del dataset en BigQuery
     tables:
       - name: orders
-      #Se agrega la configuración de freshness para orders.
         config:
           freshness:
             warn_after: {count: 24, period: hour}
@@ -31,7 +30,8 @@ models:
       - name: order_status
         tests:
           - accepted_values:
-              values: ['completed','pending','cancelled']
+              arguments:
+                values: ['completed','pending','cancelled']
 
   # Test para stg_customers: validación de datos crudos (+3 tests)
   - name: stg_customers
@@ -62,14 +62,16 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_orders')
-              field: order_id
+              arguments:
+                to: ref('stg_orders')
+                field: order_id
       - name: product_id
         tests:
           - not_null
           - relationships:
-              to: ref('stg_products')
-              field: product_id
+              arguments:
+                to: ref('stg_products')
+                field: product_id
 
   # Test para mart_orders_summary: validación de datos procesados (+3 tests)
   - name: mart_orders_summary
@@ -92,4 +94,5 @@ models:
       - name: customer_segment
         tests:
           - accepted_values:
-              values: ['VIP','Regular','NUEVO']
+              arguments:
+                values: ['VIP','Regular','NUEVO']
