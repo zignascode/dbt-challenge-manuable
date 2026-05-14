@@ -1,5 +1,6 @@
 version: 2
 
+# Definimos las fuentes de datos junto con las tablas principales del dataset
 sources:
   - name: raw
     schema: raw   # nombre del dataset en BigQuery
@@ -8,3 +9,81 @@ sources:
       - name: customers
       - name: products
       - name: order_items
+
+# Definimos los modelos junto con los tests de calidad
+models:
+  # Test para stg_orders: validación de datos crudos (+4 tests)
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['completed','pending','cancelled']
+
+  # Test para stg_customers: validación de datos crudos (+3 tests)
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: email
+        tests:
+          - not_null
+
+  # Test para stg_products: validación de datos crudos (+3 tests)
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+      - name: price
+        tests:
+          - not_null
+
+  # Test para stg_order_items: validación de datos crudos (+4 tests)
+  - name: stg_order_items
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+
+  # Test para mart_orders_summary: validación de datos procesados (+3 tests)
+  - name: mart_orders_summary
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: total_revenue
+        tests:
+          - not_null
+
+  # Test para mart_customer_ltv: validación de datos procesados (+3 tests)
+  - name: mart_customer_ltv
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_segment
+        tests:
+          - accepted_values:
+              values: ['VIP','Regular','NUEVO']

@@ -2993,3 +2993,1916 @@ ORDER BY order_id DESC
 [0m21:00:58.743222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239EE89FE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239E69CE7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239E69CE5D0>]}
 [0m21:00:58.743222 [debug] [MainThread]: Flushing usage events
 [0m21:00:59.567589 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:27:56.892539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CF5C35A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CF5CFB6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CF5CFB750>]}
+
+
+============================== 21:27:56.908382 | 242213e0-b848-4e7a-a214-f3c5ecdef00e ==============================
+[0m21:27:56.908382 [info ] [MainThread]: Running with dbt=1.11.9
+[0m21:27:56.908382 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'invocation_command': 'dbt test --select staging marts', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m21:27:58.418301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C8926FF10>]}
+[0m21:27:58.540634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CF13A4190>]}
+[0m21:27:58.540634 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m21:27:59.136854 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m21:27:59.342158 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:27:59.342158 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\schema.yml
+[0m21:27:59.566220 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_orders' in
+package 'dbt_challenge_manuable' (models\schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m21:27:59.566220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C89A33E10>]}
+[0m21:27:59.754513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C89629510>]}
+[0m21:27:59.875404 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m21:27:59.875404 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m21:28:00.034630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C898A50D0>]}
+[0m21:28:00.034630 [info ] [MainThread]: Found 10 models, 24 data tests, 4 sources, 543 macros
+[0m21:28:00.045194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C89905750>]}
+[0m21:28:00.045194 [info ] [MainThread]: 
+[0m21:28:00.050367 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:28:00.050367 [info ] [MainThread]: 
+[0m21:28:00.054008 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:28:00.062394 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m21:28:00.062394 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:28:01.706997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '242213e0-b848-4e7a-a214-f3c5ecdef00e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C89A4A410>]}
+[0m21:28:01.708539 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:28:01.763282 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f
+[0m21:28:01.763282 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:28:01.763282 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:28:01.763282 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:28:01.763282 [info ] [Thread-1 (]: 1 of 20 START test accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo  [RUN]
+[0m21:28:01.763282 [info ] [Thread-2 (]: 2 of 20 START test accepted_values_stg_orders_order_status__completed__pending__cancelled  [RUN]
+[0m21:28:01.763282 [info ] [Thread-3 (]: 3 of 20 START test not_null_mart_customer_ltv_customer_id ...................... [RUN]
+[0m21:28:01.763282 [info ] [Thread-4 (]: 4 of 20 START test not_null_mart_orders_summary_order_id ....................... [RUN]
+[0m21:28:01.763282 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f'
+[0m21:28:01.763282 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a'
+[0m21:28:01.775157 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b'
+[0m21:28:01.775157 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e'
+[0m21:28:01.775157 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f
+[0m21:28:01.775157 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:28:01.779279 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:28:01.780911 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:28:01.787650 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f"
+[0m21:28:01.795802 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"
+[0m21:28:01.821515 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"
+[0m21:28:01.832203 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"
+[0m21:28:01.832203 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:28:01.855120 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f
+[0m21:28:01.865346 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"
+[0m21:28:01.865346 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:28:01.875975 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f"
+[0m21:28:01.877994 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:28:01.879520 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"
+[0m21:28:01.879520 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"
+[0m21:28:01.879520 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        order_status as value_field,
+        count(*) as n_records
+
+    from `dbt-challenge-manuable`.`raw`.`stg_orders`
+    group by order_status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'completed','pending','cancelled'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:01.879520 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        customer_segment as value_field,
+        count(*) as n_records
+
+    from `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+    group by customer_segment
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'VIP','Regular','Nuevo'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:01.879520 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:01.879520 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:28:01.895395 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:28:01.895395 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:01.895395 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:28:01.973928 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:28:04.768405 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:fc92709c-bc6f-43eb-8032-1203487cd33f&page=queryresults
+[0m21:28:04.768405 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:c23ab47b-6667-4de2-86c4-af64382f463e&page=queryresults
+[0m21:28:04.782162 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:4e82ef10-18b8-4b9b-82a7-bffe4c413765&page=queryresults
+[0m21:28:04.823323 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:9e0f65c9-c25e-4caa-a859-f4ab1286b92b&page=queryresults
+[0m21:28:04.984315 [debug] [Thread-2 (]: SQL status: OK in 0.217 seconds
+[0m21:28:05.079872 [debug] [Thread-3 (]: SQL status: OK in 0.296 seconds
+[0m21:28:05.064203 [debug] [Thread-4 (]: SQL status: OK in 0.242 seconds
+[0m21:28:05.079872 [debug] [Thread-1 (]: SQL status: OK in 0.306 seconds
+[0m21:28:05.503600 [info ] [Thread-4 (]: 4 of 20 PASS not_null_mart_orders_summary_order_id ............................. [[32mPASS[0m in 3.73s]
+[0m21:28:05.503600 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:28:05.503600 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:28:05.503600 [info ] [Thread-4 (]: 5 of 20 START test not_null_mart_orders_summary_total_revenue .................. [RUN]
+[0m21:28:05.503600 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e, now test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e)
+[0m21:28:05.503600 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:28:05.503600 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"
+[0m21:28:05.521565 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:28:05.527849 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"
+[0m21:28:05.535389 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_revenue
+from `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+where total_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:05.535389 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:28:05.593954 [info ] [Thread-3 (]: 3 of 20 PASS not_null_mart_customer_ltv_customer_id ............................ [[32mPASS[0m in 3.83s]
+[0m21:28:05.594959 [info ] [Thread-2 (]: 2 of 20 PASS accepted_values_stg_orders_order_status__completed__pending__cancelled  [[32mPASS[0m in 3.83s]
+[0m21:28:05.602654 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:28:05.606531 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:28:05.614699 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:28:05.614699 [error] [Thread-1 (]: 1 of 20 FAIL 1 accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo  [[31mFAIL 1[0m in 3.85s]
+[0m21:28:05.617177 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:28:05.617177 [info ] [Thread-3 (]: 6 of 20 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m21:28:05.617177 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f
+[0m21:28:05.623326 [info ] [Thread-2 (]: 7 of 20 START test not_null_stg_customers_email ................................ [RUN]
+[0m21:28:05.623326 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b, now test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m21:28:05.623326 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:28:05.623326 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a, now test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533)
+[0m21:28:05.623326 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:28:05.623326 [info ] [Thread-1 (]: 8 of 20 START test not_null_stg_order_items_order_id ........................... [RUN]
+[0m21:28:05.631794 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:28:05.640215 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m21:28:05.640215 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo.a68301fb8f, now test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96)
+[0m21:28:05.651339 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"
+[0m21:28:05.651339 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:28:05.651339 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:28:05.664970 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"
+[0m21:28:05.664970 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:28:05.666893 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m21:28:05.666893 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"
+[0m21:28:05.666893 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:28:05.686488 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"
+[0m21:28:05.688052 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `dbt-challenge-manuable`.`raw`.`stg_customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:05.691155 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:28:05.691155 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select email
+from `dbt-challenge-manuable`.`raw`.`stg_customers`
+where email is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:05.720887 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:05.720887 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:28:05.720887 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:28:07.333968 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:83a92029-dd4d-46c8-8629-7a52a38f22f2&page=queryresults
+[0m21:28:07.348029 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:c207a1eb-c496-4fc8-a9d4-7cd6e00ef495&page=queryresults
+[0m21:28:07.429012 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:2194f71c-9840-4810-918b-aa2df9bc3e3b&page=queryresults
+[0m21:28:07.642006 [debug] [Thread-4 (]: SQL status: OK in 0.308 seconds
+[0m21:28:07.644018 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:f78f78ea-8b0e-4d41-b2ee-f724f4a5dff5&page=queryresults
+[0m21:28:07.644018 [debug] [Thread-2 (]: SQL status: OK in 0.295 seconds
+[0m21:28:07.706737 [debug] [Thread-3 (]: SQL status: OK in 0.288 seconds
+[0m21:28:07.943741 [debug] [Thread-1 (]: SQL status: OK in 0.309 seconds
+[0m21:28:08.261556 [info ] [Thread-3 (]: 6 of 20 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 2.64s]
+[0m21:28:08.268661 [error] [Thread-4 (]: 5 of 20 FAIL 2 not_null_mart_orders_summary_total_revenue ...................... [[31mFAIL 2[0m in 2.77s]
+[0m21:28:08.277663 [info ] [Thread-2 (]: 7 of 20 PASS not_null_stg_customers_email ...................................... [[32mPASS[0m in 2.65s]
+[0m21:28:08.280156 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:28:08.282457 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:28:08.284487 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:28:08.284487 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:28:08.284487 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:28:08.284487 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:28:08.284487 [info ] [Thread-3 (]: 9 of 20 START test not_null_stg_order_items_product_id ......................... [RUN]
+[0m21:28:08.284487 [info ] [Thread-4 (]: 10 of 20 START test not_null_stg_orders_customer_id ............................ [RUN]
+[0m21:28:08.293010 [info ] [Thread-2 (]: 11 of 20 START test not_null_stg_orders_order_id ............................... [RUN]
+[0m21:28:08.293010 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6)
+[0m21:28:08.295175 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e, now test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m21:28:08.303208 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533, now test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64)
+[0m21:28:08.308655 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:28:08.308655 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:28:08.308655 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:28:08.315778 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"
+[0m21:28:08.325895 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m21:28:08.335624 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"
+[0m21:28:08.340551 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:28:08.340551 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"
+[0m21:28:08.340551 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:28:08.348369 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:28:08.355158 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m21:28:08.355158 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:08.361107 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"
+[0m21:28:08.365321 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:28:08.365321 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `dbt-challenge-manuable`.`raw`.`stg_orders`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:08.404705 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `dbt-challenge-manuable`.`raw`.`stg_orders`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:08.404705 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:28:08.412739 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:28:08.504282 [info ] [Thread-1 (]: 8 of 20 PASS not_null_stg_order_items_order_id ................................. [[32mPASS[0m in 2.86s]
+[0m21:28:08.507392 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:28:08.507392 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:28:08.512253 [info ] [Thread-1 (]: 12 of 20 START test not_null_stg_products_price ................................ [RUN]
+[0m21:28:08.512253 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96, now test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4)
+[0m21:28:08.526165 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:28:08.533042 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"
+[0m21:28:08.533042 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:28:08.533042 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"
+[0m21:28:08.547785 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `dbt-challenge-manuable`.`raw`.`stg_products`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:08.547785 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:28:10.195910 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:e4f8c223-122b-4876-b02e-92ce2766cc03&page=queryresults
+[0m21:28:10.212297 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:c28e1fcf-535d-493f-84b6-dba6c1ff088a&page=queryresults
+[0m21:28:10.227781 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:a7a4b512-6336-4bcf-822b-c56796824742&page=queryresults
+[0m21:28:10.502244 [debug] [Thread-4 (]: SQL status: OK in 0.308 seconds
+[0m21:28:10.502244 [debug] [Thread-3 (]: SQL status: OK in 0.277 seconds
+[0m21:28:10.502244 [debug] [Thread-2 (]: SQL status: OK in 0.293 seconds
+[0m21:28:10.502244 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:5083fcf2-acba-4ae2-84ba-c49877668279&page=queryresults
+[0m21:28:10.716746 [debug] [Thread-1 (]: SQL status: OK in 0.202 seconds
+[0m21:28:10.993098 [info ] [Thread-2 (]: 11 of 20 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 2.69s]
+[0m21:28:10.993098 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:28:10.993098 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:28:10.993098 [info ] [Thread-2 (]: 13 of 20 START test not_null_stg_products_product_id ........................... [RUN]
+[0m21:28:10.993098 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64, now test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3)
+[0m21:28:10.993098 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:28:11.016645 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"
+[0m21:28:11.024613 [info ] [Thread-4 (]: 10 of 20 PASS not_null_stg_orders_customer_id .................................. [[32mPASS[0m in 2.73s]
+[0m21:28:11.024613 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:28:11.030886 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:28:11.036910 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"
+[0m21:28:11.039254 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:28:11.041085 [info ] [Thread-4 (]: 14 of 20 START test relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [RUN]
+[0m21:28:11.041085 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `dbt-challenge-manuable`.`raw`.`stg_products`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:11.041085 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5, now test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54)
+[0m21:28:11.046412 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:28:11.047561 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:28:11.098155 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m21:28:11.098155 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:28:11.106743 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m21:28:11.113123 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select order_id as from_field
+    from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+    where order_id is not null
+),
+
+parent as (
+    select order_id as to_field
+    from `dbt-challenge-manuable`.`raw`.`stg_orders`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:11.114514 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:28:11.227228 [info ] [Thread-1 (]: 12 of 20 PASS not_null_stg_products_price ...................................... [[32mPASS[0m in 2.71s]
+[0m21:28:11.229251 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:28:11.231271 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:28:11.231271 [info ] [Thread-1 (]: 15 of 20 START test relationships_stg_order_items_product_id__product_id__ref_stg_products_  [RUN]
+[0m21:28:11.233033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4, now test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c)
+[0m21:28:11.233033 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:28:11.233033 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m21:28:11.255391 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:28:11.266162 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m21:28:11.270400 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_id as from_field
+    from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from `dbt-challenge-manuable`.`raw`.`stg_products`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:11.273538 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:28:11.945094 [info ] [Thread-3 (]: 9 of 20 PASS not_null_stg_order_items_product_id ............................... [[32mPASS[0m in 3.65s]
+[0m21:28:11.947102 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:28:11.950626 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:28:11.950626 [info ] [Thread-3 (]: 16 of 20 START test unique_mart_customer_ltv_customer_id ....................... [RUN]
+[0m21:28:11.950626 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6, now test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859)
+[0m21:28:11.954446 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:28:11.971747 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"
+[0m21:28:11.975765 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:28:11.982820 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"
+[0m21:28:11.987256 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:11.988272 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:28:12.765869 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:b2055430-628e-4184-9405-29c5c422546a&page=queryresults
+[0m21:28:12.781502 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:60011d51-10f6-4338-8493-3cb2e6895fb1&page=queryresults
+[0m21:28:13.057348 [debug] [Thread-4 (]: SQL status: OK in 0.299 seconds
+[0m21:28:13.068625 [debug] [Thread-2 (]: SQL status: OK in 0.284 seconds
+[0m21:28:13.071469 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:abd7941d-f84c-47c7-a055-d7ee6f347d0c&page=queryresults
+[0m21:28:13.286754 [debug] [Thread-1 (]: SQL status: OK in 0.209 seconds
+[0m21:28:13.572244 [info ] [Thread-2 (]: 13 of 20 PASS not_null_stg_products_product_id ................................. [[32mPASS[0m in 2.58s]
+[0m21:28:13.572244 [error] [Thread-4 (]: 14 of 20 FAIL 1 relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [[31mFAIL 1[0m in 2.53s]
+[0m21:28:13.588118 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:28:13.588118 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:28:13.588118 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:28:13.588118 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:28:13.588118 [info ] [Thread-2 (]: 17 of 20 START test unique_mart_orders_summary_order_id ........................ [RUN]
+[0m21:28:13.588118 [info ] [Thread-4 (]: 18 of 20 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m21:28:13.600781 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3, now test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324)
+[0m21:28:13.602314 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54, now test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada)
+[0m21:28:13.603942 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:28:13.603942 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:28:13.619071 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"
+[0m21:28:13.627151 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"
+[0m21:28:13.635328 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:28:13.637488 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:28:13.637488 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"
+[0m21:28:13.637488 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"
+[0m21:28:13.653208 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:52c6844f-0729-48c3-a7ae-0cec6cc4991a&page=queryresults
+[0m21:28:13.653208 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:13.656070 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`stg_customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:13.656070 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:28:13.659254 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:28:13.889110 [info ] [Thread-1 (]: 15 of 20 PASS relationships_stg_order_items_product_id__product_id__ref_stg_products_  [[32mPASS[0m in 2.66s]
+[0m21:28:13.890120 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:28:13.892134 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:28:13.892134 [info ] [Thread-1 (]: 19 of 20 START test unique_stg_orders_order_id ................................. [RUN]
+[0m21:28:13.894155 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c, now test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a)
+[0m21:28:13.898229 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:28:13.908319 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"
+[0m21:28:13.910335 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:28:13.916523 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"
+[0m21:28:13.916523 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`stg_orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:13.923358 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:28:13.996324 [debug] [Thread-3 (]: SQL status: OK in 0.341 seconds
+[0m21:28:14.503616 [info ] [Thread-3 (]: 16 of 20 PASS unique_mart_customer_ltv_customer_id ............................. [[32mPASS[0m in 2.55s]
+[0m21:28:14.505625 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:28:14.505625 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:28:14.509691 [info ] [Thread-3 (]: 20 of 20 START test unique_stg_products_product_id ............................. [RUN]
+[0m21:28:14.511900 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859, now test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467)
+[0m21:28:14.511900 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:28:14.518048 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"
+[0m21:28:14.527691 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:28:14.533197 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"
+[0m21:28:14.533197 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select product_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`stg_products`
+  where product_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:28:14.533197 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:28:15.447226 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:155d4bee-304b-48e0-ab91-f93f3088a8b9&page=queryresults
+[0m21:28:15.447226 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:10eddf3e-0683-4da7-a261-2cc4413e6d9e&page=queryresults
+[0m21:28:15.724811 [debug] [Thread-4 (]: SQL status: OK in 0.273 seconds
+[0m21:28:15.724811 [debug] [Thread-2 (]: SQL status: OK in 0.273 seconds
+[0m21:28:15.724811 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:4f2ca6e1-225e-429c-b5f1-ed44ee80eee1&page=queryresults
+[0m21:28:15.937691 [debug] [Thread-1 (]: SQL status: OK in 0.202 seconds
+[0m21:28:16.032991 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:ef798960-ff64-4890-8a21-9d04c64f184c&page=queryresults
+[0m21:28:16.129313 [info ] [Thread-2 (]: 17 of 20 PASS unique_mart_orders_summary_order_id .............................. [[32mPASS[0m in 2.54s]
+[0m21:28:16.146260 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:28:16.194252 [debug] [Thread-3 (]: SQL status: OK in 0.153 seconds
+[0m21:28:16.253685 [info ] [Thread-4 (]: 18 of 20 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 2.65s]
+[0m21:28:16.253685 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:28:16.456023 [info ] [Thread-1 (]: 19 of 20 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 2.56s]
+[0m21:28:16.456023 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:28:16.652008 [info ] [Thread-3 (]: 20 of 20 PASS unique_stg_products_product_id ................................... [[32mPASS[0m in 2.14s]
+[0m21:28:16.652008 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:28:16.660228 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:28:16.699979 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:28:16.699979 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m21:28:16.699979 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a' was properly closed.
+[0m21:28:16.699979 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324' was properly closed.
+[0m21:28:16.708005 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467' was properly closed.
+[0m21:28:16.708005 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m21:28:16.708005 [info ] [MainThread]: 
+[0m21:28:16.708005 [info ] [MainThread]: Finished running 20 data tests in 0 hours 0 minutes and 16.66 seconds (16.66s).
+[0m21:28:16.716082 [debug] [MainThread]: Command end result
+[0m21:28:16.780814 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m21:28:16.787801 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m21:28:16.795864 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m21:28:16.795864 [info ] [MainThread]: 
+[0m21:28:16.795864 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m21:28:16.803912 [info ] [MainThread]: 
+[0m21:28:16.803912 [error] [MainThread]: [31mFailure in test accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__Nuevo (models\schema.yml)[0m
+[0m21:28:16.803912 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m21:28:16.807516 [info ] [MainThread]: 
+[0m21:28:16.809113 [info ] [MainThread]:   compiled code at target\compiled\dbt_challenge_manuable\models\schema.yml\accepted_values_mart_customer__407e95b32c716177884f94176fcd53f9.sql
+[0m21:28:16.809113 [info ] [MainThread]: 
+[0m21:28:16.810674 [error] [MainThread]: [31mFailure in test not_null_mart_orders_summary_total_revenue (models\schema.yml)[0m
+[0m21:28:16.812234 [error] [MainThread]:   Got 2 results, configured to fail if != 0
+[0m21:28:16.813824 [info ] [MainThread]: 
+[0m21:28:16.816117 [info ] [MainThread]:   compiled code at target\compiled\dbt_challenge_manuable\models\schema.yml\not_null_mart_orders_summary_total_revenue.sql
+[0m21:28:16.817579 [info ] [MainThread]: 
+[0m21:28:16.817579 [error] [MainThread]: [31mFailure in test relationships_stg_order_items_order_id__order_id__ref_stg_orders_ (models\schema.yml)[0m
+[0m21:28:16.821876 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m21:28:16.821876 [info ] [MainThread]: 
+[0m21:28:16.825088 [info ] [MainThread]:   compiled code at target\compiled\dbt_challenge_manuable\models\schema.yml\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql
+[0m21:28:16.825088 [info ] [MainThread]: 
+[0m21:28:16.825088 [info ] [MainThread]: Done. PASS=17 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=20
+[0m21:28:16.830133 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 4 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m21:28:16.835990 [debug] [MainThread]: Command `dbt test` failed at 21:28:16.834380 after 20.05 seconds
+[0m21:28:16.835990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CF5CFB750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C892F3390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025CF5CFB6D0>]}
+[0m21:28:16.838168 [debug] [MainThread]: Flushing usage events
+[0m21:28:17.672140 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:31:55.608774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DC328CA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DC2064B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DC334B9D0>]}
+
+
+============================== 21:31:55.624614 | df73694c-2e9b-4bce-b5ad-a00ca28d0a68 ==============================
+[0m21:31:55.624614 [info ] [MainThread]: Running with dbt=1.11.9
+[0m21:31:55.624614 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test --select staging', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m21:31:57.017641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD67DED10>]}
+[0m21:31:57.097105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DBEA09BD0>]}
+[0m21:31:57.097105 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m21:31:57.799691 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m21:31:58.021739 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:31:58.021739 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\schema.yml
+[0m21:31:58.402820 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'mart_customer_ltv' in package 'dbt_challenge_manuable' (models\schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m21:31:58.402820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD7136350>]}
+[0m21:31:58.515703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD7135090>]}
+[0m21:31:58.737010 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m21:31:58.737010 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m21:31:58.768757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD7171F50>]}
+[0m21:31:58.768757 [info ] [MainThread]: Found 10 models, 24 data tests, 4 sources, 543 macros
+[0m21:31:58.768757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD700F410>]}
+[0m21:31:58.784530 [info ] [MainThread]: 
+[0m21:31:58.784530 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:31:58.784530 [info ] [MainThread]: 
+[0m21:31:58.789838 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:31:58.800441 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m21:31:58.800441 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:32:00.304909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df73694c-2e9b-4bce-b5ad-a00ca28d0a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD71113D0>]}
+[0m21:32:00.304909 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:32:00.352760 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:32:00.352760 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:32:00.352760 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:32:00.352760 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:32:00.352760 [info ] [Thread-1 (]: 1 of 14 START test accepted_values_stg_orders_order_status__completed__pending__cancelled  [RUN]
+[0m21:32:00.352760 [info ] [Thread-2 (]: 2 of 14 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m21:32:00.352760 [info ] [Thread-3 (]: 3 of 14 START test not_null_stg_customers_email ................................ [RUN]
+[0m21:32:00.352760 [info ] [Thread-4 (]: 4 of 14 START test not_null_stg_order_items_order_id ........................... [RUN]
+[0m21:32:00.352760 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a'
+[0m21:32:00.368476 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m21:32:00.370291 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533'
+[0m21:32:00.372689 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96'
+[0m21:32:00.372689 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:32:00.372689 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:32:00.378251 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:32:00.378251 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:32:00.393468 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"
+[0m21:32:00.409839 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m21:32:00.417756 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"
+[0m21:32:00.426342 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"
+[0m21:32:00.434032 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:32:00.434032 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:32:00.442526 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:32:00.458280 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"
+[0m21:32:00.458280 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:32:00.474335 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m21:32:00.474335 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"
+[0m21:32:00.474335 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"
+[0m21:32:00.474335 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        order_status as value_field,
+        count(*) as n_records
+
+    from `dbt-challenge-manuable`.`raw`.`stg_orders`
+    group by order_status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'completed','pending','cancelled'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:00.474335 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `dbt-challenge-manuable`.`raw`.`stg_customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:00.489378 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:32:00.490400 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select email
+from `dbt-challenge-manuable`.`raw`.`stg_customers`
+where email is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:00.490400 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:32:00.490400 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:00.534232 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:32:00.534232 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:32:02.250665 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:2e05852c-c682-48db-978f-7a48c15cf734&page=queryresults
+[0m21:32:02.250665 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:abd97ad4-b5fc-4784-a827-8c0a25c39182&page=queryresults
+[0m21:32:02.250665 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:5a1c615c-4a53-487a-8204-e43cfb3e4e7a&page=queryresults
+[0m21:32:02.375748 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:95277991-0e6c-4210-a584-4686fb92e084&page=queryresults
+[0m21:32:02.519256 [debug] [Thread-4 (]: SQL status: OK in 0.265 seconds
+[0m21:32:02.519256 [debug] [Thread-2 (]: SQL status: OK in 0.268 seconds
+[0m21:32:02.519256 [debug] [Thread-3 (]: SQL status: OK in 0.268 seconds
+[0m21:32:02.638942 [debug] [Thread-1 (]: SQL status: OK in 0.262 seconds
+[0m21:32:03.075739 [info ] [Thread-1 (]: 1 of 14 PASS accepted_values_stg_orders_order_status__completed__pending__cancelled  [[32mPASS[0m in 2.72s]
+[0m21:32:03.091583 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m21:32:03.098093 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:32:03.098093 [info ] [Thread-3 (]: 3 of 14 PASS not_null_stg_customers_email ...................................... [[32mPASS[0m in 2.73s]
+[0m21:32:03.102993 [info ] [Thread-1 (]: 5 of 14 START test not_null_stg_order_items_product_id ......................... [RUN]
+[0m21:32:03.107953 [info ] [Thread-4 (]: 4 of 14 PASS not_null_stg_order_items_order_id ................................. [[32mPASS[0m in 2.74s]
+[0m21:32:03.107953 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m21:32:03.113647 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a, now test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6)
+[0m21:32:03.115659 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m21:32:03.115659 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:32:03.115659 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:32:03.115659 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:32:03.115659 [info ] [Thread-3 (]: 6 of 14 START test not_null_stg_orders_customer_id ............................. [RUN]
+[0m21:32:03.130478 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"
+[0m21:32:03.132047 [info ] [Thread-4 (]: 7 of 14 START test not_null_stg_orders_order_id ................................ [RUN]
+[0m21:32:03.133170 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533, now test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m21:32:03.142315 [info ] [Thread-2 (]: 2 of 14 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 2.79s]
+[0m21:32:03.142315 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96, now test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64)
+[0m21:32:03.147623 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:32:03.149019 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:32:03.149783 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m21:32:03.149783 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:32:03.159040 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"
+[0m21:32:03.166822 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m21:32:03.166822 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:32:03.177650 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"
+[0m21:32:03.177650 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:03.177650 [info ] [Thread-2 (]: 8 of 14 START test not_null_stg_products_price ................................. [RUN]
+[0m21:32:03.177650 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:32:03.177650 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:03.177650 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:32:03.177650 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4)
+[0m21:32:03.193918 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m21:32:03.239712 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"
+[0m21:32:03.242482 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:32:03.249236 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `dbt-challenge-manuable`.`raw`.`stg_orders`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:03.249236 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"
+[0m21:32:03.249236 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:32:03.255316 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `dbt-challenge-manuable`.`raw`.`stg_orders`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:03.255316 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:32:03.298778 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:32:03.347261 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"
+[0m21:32:03.352858 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `dbt-challenge-manuable`.`raw`.`stg_products`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:03.354880 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:32:04.907312 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:5daad000-088a-48ac-91bd-b73ff5df4910&page=queryresults
+[0m21:32:04.907312 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:c1156565-b841-4c53-829b-9eb3d124d8bd&page=queryresults
+[0m21:32:04.921207 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:737b3c98-f318-425c-8078-91b70b2a69cc&page=queryresults
+[0m21:32:05.125967 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:5a0e298b-306d-459b-a499-6a68ba80ebb3&page=queryresults
+[0m21:32:05.222572 [debug] [Thread-3 (]: SQL status: OK in 0.308 seconds
+[0m21:32:05.222572 [debug] [Thread-4 (]: SQL status: OK in 0.300 seconds
+[0m21:32:05.310714 [debug] [Thread-1 (]: SQL status: OK in 0.390 seconds
+[0m21:32:05.329641 [debug] [Thread-2 (]: SQL status: OK in 0.203 seconds
+[0m21:32:05.638055 [info ] [Thread-3 (]: 6 of 14 PASS not_null_stg_orders_customer_id ................................... [[32mPASS[0m in 2.50s]
+[0m21:32:05.642075 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m21:32:05.642075 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:32:05.642075 [info ] [Thread-3 (]: 9 of 14 START test not_null_stg_products_product_id ............................ [RUN]
+[0m21:32:05.645259 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5, now test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3)
+[0m21:32:05.645259 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:32:05.657242 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"
+[0m21:32:05.662079 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:32:05.668100 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"
+[0m21:32:05.676050 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `dbt-challenge-manuable`.`raw`.`stg_products`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:05.676050 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:32:05.723446 [info ] [Thread-1 (]: 5 of 14 PASS not_null_stg_order_items_product_id ............................... [[32mPASS[0m in 2.61s]
+[0m21:32:05.723446 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m21:32:05.731062 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:32:05.731062 [info ] [Thread-1 (]: 10 of 14 START test relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [RUN]
+[0m21:32:05.731062 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6, now test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54)
+[0m21:32:05.735034 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:32:05.750075 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m21:32:05.757034 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:32:05.759439 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m21:32:05.759439 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select order_id as from_field
+    from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+    where order_id is not null
+),
+
+parent as (
+    select order_id as to_field
+    from `dbt-challenge-manuable`.`raw`.`stg_orders`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:05.759439 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:05.859001 [info ] [Thread-2 (]: 8 of 14 PASS not_null_stg_products_price ....................................... [[32mPASS[0m in 2.68s]
+[0m21:32:05.861020 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m21:32:05.863036 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:32:05.863036 [info ] [Thread-2 (]: 11 of 14 START test relationships_stg_order_items_product_id__product_id__ref_stg_products_  [RUN]
+[0m21:32:05.865049 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4, now test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c)
+[0m21:32:05.867087 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:32:05.882965 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m21:32:05.884974 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:32:05.891002 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m21:32:05.892714 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_id as from_field
+    from `dbt-challenge-manuable`.`raw`.`stg_order_items`
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from `dbt-challenge-manuable`.`raw`.`stg_products`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:05.897686 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:32:06.352859 [info ] [Thread-4 (]: 7 of 14 PASS not_null_stg_orders_order_id ...................................... [[32mPASS[0m in 3.21s]
+[0m21:32:06.352859 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m21:32:06.355346 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:32:06.355346 [info ] [Thread-4 (]: 12 of 14 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m21:32:06.357359 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64, now test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada)
+[0m21:32:06.359452 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:32:06.375272 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"
+[0m21:32:06.379407 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:32:06.387451 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"
+[0m21:32:06.389462 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`stg_customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:06.391214 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:32:07.225473 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:6cbf28ae-d4dd-4186-b7e1-e84d682ee6fe&page=queryresults
+[0m21:32:07.372183 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:838aad9c-9bd5-4191-b901-cf0cf4a8b996&page=queryresults
+[0m21:32:07.473613 [debug] [Thread-3 (]: SQL status: OK in 0.233 seconds
+[0m21:32:07.560557 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:3720e13a-5659-4fb3-a8f1-a6523fd048db&page=queryresults
+[0m21:32:07.678183 [debug] [Thread-1 (]: SQL status: OK in 0.298 seconds
+[0m21:32:07.680197 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:ed810516-edd9-46bd-ac3e-f186c79e6c32&page=queryresults
+[0m21:32:07.789462 [debug] [Thread-2 (]: SQL status: OK in 0.227 seconds
+[0m21:32:07.880932 [debug] [Thread-4 (]: SQL status: OK in 0.198 seconds
+[0m21:32:07.890701 [info ] [Thread-3 (]: 9 of 14 PASS not_null_stg_products_product_id .................................. [[32mPASS[0m in 2.25s]
+[0m21:32:07.892711 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m21:32:07.892711 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:32:07.892711 [info ] [Thread-3 (]: 13 of 14 START test unique_stg_orders_order_id ................................. [RUN]
+[0m21:32:07.892711 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3, now test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a)
+[0m21:32:07.902191 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:32:07.909761 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"
+[0m21:32:07.909761 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:32:07.920415 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"
+[0m21:32:07.922423 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`stg_orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:07.924407 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:32:08.118269 [error] [Thread-1 (]: 10 of 14 FAIL 1 relationships_stg_order_items_order_id__order_id__ref_stg_orders_  [[31mFAIL 1[0m in 2.39s]
+[0m21:32:08.118269 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m21:32:08.128715 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:32:08.128715 [info ] [Thread-1 (]: 14 of 14 START test unique_stg_products_product_id ............................. [RUN]
+[0m21:32:08.128715 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54, now test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467)
+[0m21:32:08.128715 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:32:08.150864 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"
+[0m21:32:08.152876 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:32:08.159379 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"
+[0m21:32:08.159379 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select product_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`stg_products`
+  where product_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:08.159379 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:08.295364 [info ] [Thread-4 (]: 12 of 14 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 1.94s]
+[0m21:32:08.295364 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m21:32:08.295364 [info ] [Thread-2 (]: 11 of 14 PASS relationships_stg_order_items_product_id__product_id__ref_stg_products_  [[32mPASS[0m in 2.43s]
+[0m21:32:08.295364 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m21:32:09.727173 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:e2b6440a-17bc-4569-ae14-4f99ec4410b4&page=queryresults
+[0m21:32:09.821376 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:ad35a3ad-bea2-442d-ae19-ead9ec9815fd&page=queryresults
+[0m21:32:09.941522 [debug] [Thread-3 (]: SQL status: OK in 0.218 seconds
+[0m21:32:10.124366 [debug] [Thread-1 (]: SQL status: OK in 0.306 seconds
+[0m21:32:10.445165 [info ] [Thread-3 (]: 13 of 14 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 2.55s]
+[0m21:32:10.445165 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m21:32:10.748486 [info ] [Thread-1 (]: 14 of 14 PASS unique_stg_products_product_id ................................... [[32mPASS[0m in 2.62s]
+[0m21:32:10.748486 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m21:32:10.748486 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:32:10.815112 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:32:10.817119 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m21:32:10.817119 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467' was properly closed.
+[0m21:32:10.817119 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c' was properly closed.
+[0m21:32:10.817119 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a' was properly closed.
+[0m21:32:10.820018 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m21:32:10.820018 [info ] [MainThread]: 
+[0m21:32:10.821528 [info ] [MainThread]: Finished running 14 data tests in 0 hours 0 minutes and 12.03 seconds (12.03s).
+[0m21:32:10.821528 [debug] [MainThread]: Command end result
+[0m21:32:10.900251 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m21:32:10.900251 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m21:32:10.908498 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m21:32:10.908498 [info ] [MainThread]: 
+[0m21:32:10.908498 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:32:10.908498 [info ] [MainThread]: 
+[0m21:32:10.908498 [error] [MainThread]: [31mFailure in test relationships_stg_order_items_order_id__order_id__ref_stg_orders_ (models\schema.yml)[0m
+[0m21:32:10.924196 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m21:32:10.926282 [info ] [MainThread]: 
+[0m21:32:10.929139 [info ] [MainThread]:   compiled code at target\compiled\dbt_challenge_manuable\models\schema.yml\relationships_stg_order_items_b3d7cdbd08ebfad01e3226c01c10bba0.sql
+[0m21:32:10.929139 [info ] [MainThread]: 
+[0m21:32:10.929139 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=14
+[0m21:32:10.934555 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m21:32:10.936838 [debug] [MainThread]: Command `dbt test` failed at 21:32:10.936838 after 15.43 seconds
+[0m21:32:10.936838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DBB800410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DD6E6B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021DBB50E7D0>]}
+[0m21:32:10.940769 [debug] [MainThread]: Flushing usage events
+[0m21:32:11.768494 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:32:45.557649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002021AC3DDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020219426750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002021AC3DD90>]}
+
+
+============================== 21:32:45.569710 | 29c8c514-3ad0-48ef-9c8b-ccec8f2da773 ==============================
+[0m21:32:45.569710 [info ] [MainThread]: Running with dbt=1.11.9
+[0m21:32:45.569710 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt test --select marts', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m21:32:47.094126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '29c8c514-3ad0-48ef-9c8b-ccec8f2da773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E1FE310>]}
+[0m21:32:47.157389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '29c8c514-3ad0-48ef-9c8b-ccec8f2da773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002021639B050>]}
+[0m21:32:47.157389 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m21:32:47.834565 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m21:32:48.057613 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:32:48.057613 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:32:48.057613 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:32:48.122982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '29c8c514-3ad0-48ef-9c8b-ccec8f2da773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E246890>]}
+[0m21:32:48.354846 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m21:32:48.357787 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m21:32:48.398399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '29c8c514-3ad0-48ef-9c8b-ccec8f2da773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E94FA50>]}
+[0m21:32:48.398399 [info ] [MainThread]: Found 10 models, 24 data tests, 4 sources, 543 macros
+[0m21:32:48.398399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29c8c514-3ad0-48ef-9c8b-ccec8f2da773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E8D5550>]}
+[0m21:32:48.406492 [info ] [MainThread]: 
+[0m21:32:48.406492 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:32:48.406492 [info ] [MainThread]: 
+[0m21:32:48.406492 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:32:48.414697 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m21:32:48.414697 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:32:49.999119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29c8c514-3ad0-48ef-9c8b-ccec8f2da773', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E6CB3D0>]}
+[0m21:32:49.999119 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:32:50.059011 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:32:50.043285 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m21:32:50.061737 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:32:50.061737 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:32:50.069350 [info ] [Thread-2 (]: 2 of 6 START test not_null_mart_customer_ltv_customer_id ....................... [RUN]
+[0m21:32:50.069350 [info ] [Thread-1 (]: 1 of 6 START test accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO  [RUN]
+[0m21:32:50.075064 [info ] [Thread-3 (]: 3 of 6 START test not_null_mart_orders_summary_order_id ........................ [RUN]
+[0m21:32:50.075064 [info ] [Thread-4 (]: 4 of 6 START test not_null_mart_orders_summary_total_revenue ................... [RUN]
+[0m21:32:50.075064 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b'
+[0m21:32:50.075064 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947'
+[0m21:32:50.075064 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e'
+[0m21:32:50.075064 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e'
+[0m21:32:50.075064 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:32:50.087102 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m21:32:50.087102 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:32:50.089122 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:32:50.123086 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"
+[0m21:32:50.138754 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947"
+[0m21:32:50.138754 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"
+[0m21:32:50.159069 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"
+[0m21:32:50.161089 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:32:50.161089 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:32:50.167921 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m21:32:50.193790 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:32:50.202819 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"
+[0m21:32:50.204830 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"
+[0m21:32:50.209953 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947"
+[0m21:32:50.209953 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"
+[0m21:32:50.222399 [debug] [Thread-2 (]: On test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:50.222399 [debug] [Thread-3 (]: On test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:50.222399 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:32:50.222399 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        customer_segment as value_field,
+        count(*) as n_records
+
+    from `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+    group by customer_segment
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'VIP','Regular','NUEVO'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:50.229028 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:32:50.229028 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_revenue
+from `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+where total_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:50.269352 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:32:50.315129 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:32:51.918290 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:ea9d8334-fa1a-46d0-a30f-1fba417256b7&page=queryresults
+[0m21:32:51.918290 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:7074a984-6148-42ba-84a1-9f6e503c0a0c&page=queryresults
+[0m21:32:51.918290 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:ad7ad4df-9ad2-4626-823d-5d193598e6b3&page=queryresults
+[0m21:32:51.980509 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:54ec61de-6f22-4003-960c-37839df354bc&page=queryresults
+[0m21:32:52.121906 [debug] [Thread-1 (]: SQL status: OK in 0.199 seconds
+[0m21:32:52.225968 [debug] [Thread-2 (]: SQL status: OK in 0.304 seconds
+[0m21:32:52.227991 [debug] [Thread-3 (]: SQL status: OK in 0.236 seconds
+[0m21:32:52.227991 [debug] [Thread-4 (]: SQL status: OK in 0.304 seconds
+[0m21:32:53.012863 [error] [Thread-4 (]: 4 of 6 FAIL 2 not_null_mart_orders_summary_total_revenue ....................... [[31mFAIL 2[0m in 2.94s]
+[0m21:32:53.021884 [info ] [Thread-1 (]: 1 of 6 PASS accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO  [[32mPASS[0m in 2.95s]
+[0m21:32:53.031424 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m21:32:53.021884 [info ] [Thread-2 (]: 2 of 6 PASS not_null_mart_customer_ltv_customer_id ............................. [[32mPASS[0m in 2.95s]
+[0m21:32:53.029270 [info ] [Thread-3 (]: 3 of 6 PASS not_null_mart_orders_summary_order_id .............................. [[32mPASS[0m in 2.95s]
+[0m21:32:53.031424 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m21:32:53.037976 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:32:53.039988 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m21:32:53.042905 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m21:32:53.047038 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:32:53.049404 [info ] [Thread-4 (]: 5 of 6 START test unique_mart_customer_ltv_customer_id ......................... [RUN]
+[0m21:32:53.049404 [info ] [Thread-1 (]: 6 of 6 START test unique_mart_orders_summary_order_id .......................... [RUN]
+[0m21:32:53.049404 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e, now test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859)
+[0m21:32:53.054260 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947, now test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324)
+[0m21:32:53.056088 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:32:53.056088 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:32:53.070404 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"
+[0m21:32:53.078444 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"
+[0m21:32:53.083239 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:32:53.087905 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"
+[0m21:32:53.087905 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:32:53.094956 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"
+[0m21:32:53.094956 [debug] [Thread-4 (]: On test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:53.098418 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:32:53.098418 [debug] [Thread-1 (]: On test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:32:53.142282 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:32:54.575061 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:15872fb9-0dca-4349-9710-9a2c2eb4cf5c&page=queryresults
+[0m21:32:54.683453 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:35999806-4682-4919-a5fa-c929f8598b3d&page=queryresults
+[0m21:32:54.778985 [debug] [Thread-1 (]: SQL status: OK in 0.206 seconds
+[0m21:32:54.990252 [debug] [Thread-4 (]: SQL status: OK in 0.307 seconds
+[0m21:32:55.406053 [info ] [Thread-1 (]: 6 of 6 PASS unique_mart_orders_summary_order_id ................................ [[32mPASS[0m in 2.36s]
+[0m21:32:55.408061 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m21:32:55.508276 [info ] [Thread-4 (]: 5 of 6 PASS unique_mart_customer_ltv_customer_id ............................... [[32mPASS[0m in 2.46s]
+[0m21:32:55.508276 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m21:32:55.508276 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:32:55.559375 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:32:55.561382 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m21:32:55.561382 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b' was properly closed.
+[0m21:32:55.561382 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324' was properly closed.
+[0m21:32:55.561382 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e' was properly closed.
+[0m21:32:55.565884 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859' was properly closed.
+[0m21:32:55.565884 [info ] [MainThread]: 
+[0m21:32:55.565884 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 7.16 seconds (7.16s).
+[0m21:32:55.565884 [debug] [MainThread]: Command end result
+[0m21:32:55.639438 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m21:32:55.639438 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m21:32:55.655479 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m21:32:55.655479 [info ] [MainThread]: 
+[0m21:32:55.655479 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:32:55.655479 [info ] [MainThread]: 
+[0m21:32:55.655479 [error] [MainThread]: [31mFailure in test not_null_mart_orders_summary_total_revenue (models\schema.yml)[0m
+[0m21:32:55.655479 [error] [MainThread]:   Got 2 results, configured to fail if != 0
+[0m21:32:55.655479 [info ] [MainThread]: 
+[0m21:32:55.671252 [info ] [MainThread]:   compiled code at target\compiled\dbt_challenge_manuable\models\schema.yml\not_null_mart_orders_summary_total_revenue.sql
+[0m21:32:55.671252 [info ] [MainThread]: 
+[0m21:32:55.671252 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=6
+[0m21:32:55.683858 [debug] [MainThread]: Command `dbt test` failed at 21:32:55.683858 after 10.23 seconds
+[0m21:32:55.686687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022E245910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020212DFE7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002021AC44B50>]}
+[0m21:32:55.694750 [debug] [MainThread]: Flushing usage events
+[0m21:32:56.422332 [debug] [MainThread]: An error was encountered while trying to flush usage events
