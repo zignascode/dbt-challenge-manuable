@@ -10,7 +10,7 @@ FROM (
   SELECT
     order_id,
     SAFE_CAST(order_date AS DATE) AS order_date, -- Forzar a fecha, sino arroja null
-    LOWER(TRIM(status)) AS order_status, -- Limpiar espacios y convertir a minúsculas
+    {{ normalize_text('status') }} AS order_status, -- Se usa la macro normalize_text
     CASE                          -- Si el producto no existe lo marcamos como "NOT EXIST"
       WHEN customer_id NOT IN (SELECT customer_id FROM {{ source('raw','customers') }})
         THEN 'NOT EXIST'

@@ -8,10 +8,7 @@ SELECT
     last_order_date,
     total_orders,
     total_revenue,
-    CASE
-        WHEN total_revenue >5000 THEN 'VIP'
-        WHEN total_revenue >500 THEN 'Regular'
-        WHEN total_orders <2 THEN 'NUEVO'
-    END AS customer_segment
+    -- Se usa aquí la macros customer_segment para segmentar a los clientes
+    {{ customer_segment('total_revenue', 'total_orders') }} AS customer_segment
 FROM {{ ref('int_customers') }}
 ORDER BY customer_id DESC
