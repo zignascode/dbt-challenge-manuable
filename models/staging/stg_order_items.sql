@@ -1,6 +1,6 @@
 {{ config(materialized='view') }}
 
-SELECT
+SELECT DISTINCT
   order_id,
   product_id,
   quantity

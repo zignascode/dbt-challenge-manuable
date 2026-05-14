@@ -1,6 +1,6 @@
 {{ config(materialized='view') }}
 
-SELECT
+SELECT DISTINCT
   product_id,
   TRIM(name) AS product_name,
   SAFE_CAST(price AS NUMERIC) AS price
