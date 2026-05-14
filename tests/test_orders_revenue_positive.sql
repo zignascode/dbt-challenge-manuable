@@ -2,7 +2,7 @@
 -- Se aplica a la tabla mart_orders_summary
 -- Se espera que arroje error debido a que la tabla contiene datos que cumplen con la condición
 -- Se dejaron así intencionalmente para validar el fucnionamiento del test
-
+SELECT
     order_id,
     total_revenue
 FROM {{ ref('mart_orders_summary') }}
