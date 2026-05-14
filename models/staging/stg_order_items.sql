@@ -8,13 +8,12 @@ SELECT DISTINCT
 FROM (
   SELECT
     order_id,
-    product_id,
     SAFE_CAST(quantity AS INT64) AS quantity,
     CASE -- Si el producto no existe en stg_products, lo marcamos como "NOT EXIST"
       WHEN product_id NOT IN (SELECT product_id FROM {{ source('raw','products') }})
         THEN 'NOT EXIST'
         ELSE product_id
-    END AS existance_condition,
+    END AS product_id,
     --CASE -- Si el negativo es un error, lo marcamos como "INVALID"
     --  WHEN SAFE_CAST(quantity AS INT64) < 0
     --    THEN 'INVALID'
@@ -22,6 +21,7 @@ FROM (
   FROM {{ source('raw','order_items') }}
 )
 
-WHERE existance_condition <> 'NOT EXIST'
-AND order_id IS NOT NULL
+WHERE order_id IS NOT NULL
+-- Si queremos excluir los productos que no existen, descomentamos la siguiente línea:
+-- AND existance_condition <> 'NOT EXIST'
 ORDER BY order_id DESC

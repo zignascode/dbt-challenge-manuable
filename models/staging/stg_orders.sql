@@ -2,9 +2,9 @@
 
 SELECT DISTINCT
   order_id,
+  TRIM(customer_id) AS customer_id,
   order_date,
   order_status,
-  customer_id
 
 FROM (
   SELECT
@@ -19,6 +19,7 @@ FROM (
   FROM {{ source('raw','orders') }} -- Fuente de datos
 )
 
-WHERE customer_id <> 'NOT EXIST' -- Filtrar registros con clientes no existentes
-  AND order_id IS NOT NULL -- garantiza que no haya registros de ids nulos
+WHERE order_id IS NOT NULL -- garantiza que no haya registros de ids nulos
+-- Descomentar la siguiente línea si queremos excluir los clientes que no existen:
+-- AND customer_id <> 'NOT EXIST' -- Filtrar registros con clientes no existentes
 ORDER BY order_id
