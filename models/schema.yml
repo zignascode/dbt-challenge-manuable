@@ -6,6 +6,12 @@ sources:
     schema: raw   # nombre del dataset en BigQuery
     tables:
       - name: orders
+      #Se agrega la configuración de freshness para orders.
+        config:
+          freshness:
+            warn_after: {count: 24, period: hour}
+            error_after: {count: 48, period: hour}
+          loaded_at_field: order_date
       - name: customers
       - name: products
       - name: order_items
