@@ -1510,3 +1510,855 @@ ORDER BY order_id DESC;
 [0m19:19:10.925725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F4BC41E7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F4BC41E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F4BC41E310>]}
 [0m19:19:10.927746 [debug] [MainThread]: Flushing usage events
 [0m19:19:11.889573 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:29:09.502499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBF063E290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBF0635610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBEF414950>]}
+
+
+============================== 19:29:09.502499 | b5828a3a-74c2-4164-a1e4-fd4b416f4ee8 ==============================
+[0m19:29:09.502499 [info ] [MainThread]: Running with dbt=1.11.9
+[0m19:29:09.502499 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run --select intermediate', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m19:29:11.314514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB84B19D90>]}
+[0m19:29:11.377213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBEBDA9BD0>]}
+[0m19:29:11.386029 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m19:29:12.019452 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m19:29:12.219403 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:29:12.219403 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\intermediate\int_orders.sql
+[0m19:29:12.536112 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_challenge_manuable.marts
+[0m19:29:12.566213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB84ECB610>]}
+[0m19:29:12.697072 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m19:29:12.702311 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m19:29:12.718866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB85065890>]}
+[0m19:29:12.718866 [info ] [MainThread]: Found 8 models, 4 data tests, 4 sources, 541 macros
+[0m19:29:12.718866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB8500CAD0>]}
+[0m19:29:12.727435 [info ] [MainThread]: 
+[0m19:29:12.727435 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:29:12.727435 [info ] [MainThread]: 
+[0m19:29:12.727435 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:29:12.744639 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable'
+[0m19:29:12.744639 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:14.243330 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m19:29:14.243330 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:29:15.685719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB84B45B10>]}
+[0m19:29:15.685719 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:29:15.742506 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.int_customers
+[0m19:29:15.742506 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.int_orders
+[0m19:29:15.742506 [info ] [Thread-1 (]: 1 of 2 START sql view model raw.int_customers .................................. [RUN]
+[0m19:29:15.742506 [info ] [Thread-2 (]: 2 of 2 START sql view model raw.int_orders ..................................... [RUN]
+[0m19:29:15.742506 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.int_customers'
+[0m19:29:15.742506 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.int_orders'
+[0m19:29:15.742506 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.int_customers
+[0m19:29:15.742506 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.int_orders
+[0m19:29:15.765773 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_customers"
+[0m19:29:15.775527 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_orders"
+[0m19:29:15.775527 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.int_customers
+[0m19:29:15.775527 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.int_orders
+[0m19:29:15.820500 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_challenge_manuable.int_customers"
+[0m19:29:15.820500 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_challenge_manuable.int_orders"
+[0m19:29:15.831820 [debug] [Thread-1 (]: On model.dbt_challenge_manuable.int_customers: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.int_customers"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`int_customers`
+  OPTIONS()
+  as 
+
+WITH customer_orders AS (
+    SELECT
+        o.customer_id,
+        o.order_id,
+        o.order_date,
+        o.order_status,
+        SUM(oi.quantity * p.price) AS order_revenue
+    FROM `dbt-challenge-manuable`.`raw`.`stg_orders` o
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_order_items` oi ON (o.order_id = oi.order_id)
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_products` p ON (oi.product_id = p.product_id)
+    GROUP BY o.customer_id, o.order_id, o.order_date, o.order_status
+)
+
+SELECT
+    c.customer_id,
+    c.customer_name,
+    c.email,
+    COUNT(DISTINCT co.order_id) AS total_orders,
+    SUM(co.order_revenue) AS total_revenue,
+    MIN(co.order_date) AS first_order_date,
+    MAX(co.order_date) AS last_order_date
+FROM `dbt-challenge-manuable`.`raw`.`stg_customers` c
+LEFT JOIN customer_orders co ON (c.customer_id = co.customer_id)
+GROUP BY c.customer_id, c.customer_name, c.email
+ORDER BY customer_id DESC;
+
+
+[0m19:29:15.831820 [debug] [Thread-2 (]: On model.dbt_challenge_manuable.int_orders: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.int_orders"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`int_orders`
+  OPTIONS()
+  as 
+
+SELECT
+    oi.order_id,
+    o.customer_id,
+    oi.product_id,
+    p.product_name,
+    o.order_date,
+    o.order_status,
+    oi.quantity,
+    p.price,
+    oi.quantity * p.price AS item_revenue --monto por producto
+FROM `dbt-challenge-manuable`.`raw`.`stg_order_items` oi
+LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_products` p ON (oi.product_id = p.product_id)
+LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_orders` o ON (oi.order_id = o.order_id)
+
+ORDER BY order_id DESC;
+
+
+[0m19:29:15.836774 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:29:15.836774 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:29:17.526454 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:751c5d8e-6194-4388-ae20-ff0de91fedba&page=queryresults
+[0m19:29:17.526454 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:f7ddd54f-a63a-40b3-aa1e-620165721f7c&page=queryresults
+[0m19:29:17.928951 [debug] [Thread-2 (]: SQL status: OK in 0.407 seconds
+[0m19:29:18.218872 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB85491750>]}
+[0m19:29:18.226817 [info ] [Thread-2 (]: 2 of 2 OK created sql view model raw.int_orders ................................ [[32mCREATE VIEW (0 processed)[0m in 2.48s]
+[0m19:29:18.226817 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.int_orders
+[0m19:29:18.440562 [debug] [Thread-1 (]: SQL status: OK in 0.917 seconds
+[0m19:29:18.457740 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5828a3a-74c2-4164-a1e4-fd4b416f4ee8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB8545B8D0>]}
+[0m19:29:18.459749 [info ] [Thread-1 (]: 1 of 2 OK created sql view model raw.int_customers ............................. [[32mCREATE VIEW (0 processed)[0m in 2.72s]
+[0m19:29:18.461757 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.int_customers
+[0m19:29:18.461757 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:29:18.502499 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:29:18.502499 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable' was properly closed.
+[0m19:29:18.502499 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m19:29:18.510294 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.int_customers' was properly closed.
+[0m19:29:18.510294 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.int_orders' was properly closed.
+[0m19:29:18.510294 [info ] [MainThread]: 
+[0m19:29:18.510294 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 5.78 seconds (5.78s).
+[0m19:29:18.510294 [debug] [MainThread]: Command end result
+[0m19:29:18.568824 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m19:29:18.574738 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m19:29:18.583210 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m19:29:18.583210 [info ] [MainThread]: 
+[0m19:29:18.585447 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:29:18.585447 [info ] [MainThread]: 
+[0m19:29:18.585447 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m19:29:18.585447 [debug] [MainThread]: Command `dbt run` succeeded at 19:29:18.585447 after 9.20 seconds
+[0m19:29:18.594329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE881E310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE881E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBE881E7D0>]}
+[0m19:29:18.595915 [debug] [MainThread]: Flushing usage events
+[0m19:29:19.469648 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:54:39.585012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C90A2DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C90A2D390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C90A2DDD0>]}
+
+
+============================== 19:54:39.585012 | 62f8edd2-0157-4159-8ba8-63a059f206ce ==============================
+[0m19:54:39.585012 [info ] [MainThread]: Running with dbt=1.11.9
+[0m19:54:39.585012 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select intermediate', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m19:54:41.131229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA3EEA050>]}
+[0m19:54:41.268179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C8C19B450>]}
+[0m19:54:41.270192 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m19:54:41.936712 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m19:54:42.161452 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:54:42.163644 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\intermediate\int_orders.sql
+[0m19:54:42.483430 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_challenge_manuable.marts
+[0m19:54:42.492284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA45A3E10>]}
+[0m19:54:42.641596 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m19:54:42.649647 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m19:54:42.669969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA444A7D0>]}
+[0m19:54:42.669969 [info ] [MainThread]: Found 8 models, 4 data tests, 4 sources, 541 macros
+[0m19:54:42.674879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA448A010>]}
+[0m19:54:42.674879 [info ] [MainThread]: 
+[0m19:54:42.674879 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:54:42.674879 [info ] [MainThread]: 
+[0m19:54:42.674879 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:54:42.687051 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable'
+[0m19:54:42.687051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:44.123004 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m19:54:44.124941 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:45.448173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA3E73AD0>]}
+[0m19:54:45.449683 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:54:45.497214 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.int_orders
+[0m19:54:45.497214 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.int_customers
+[0m19:54:45.497214 [info ] [Thread-2 (]: 2 of 2 START sql view model raw.int_orders ..................................... [RUN]
+[0m19:54:45.497214 [info ] [Thread-1 (]: 1 of 2 START sql view model raw.int_customers .................................. [RUN]
+[0m19:54:45.497214 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.int_orders'
+[0m19:54:45.497214 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.int_customers'
+[0m19:54:45.497214 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.int_orders
+[0m19:54:45.497214 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.int_customers
+[0m19:54:45.515589 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_orders"
+[0m19:54:45.524674 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_customers"
+[0m19:54:45.529500 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.int_orders
+[0m19:54:45.531515 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.int_customers
+[0m19:54:45.576107 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_challenge_manuable.int_orders"
+[0m19:54:45.576107 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_challenge_manuable.int_customers"
+[0m19:54:45.585479 [debug] [Thread-2 (]: On model.dbt_challenge_manuable.int_orders: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.int_orders"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`int_orders`
+  OPTIONS()
+  as 
+
+WITH orders_products AS (
+    SELECT
+        oi.order_id,
+        oi.product_id,
+        p.product_name,
+        p.price,
+        oi.quantity,
+        oi.quantity * p.price AS item_revenue
+    FROM `dbt-challenge-manuable`.`raw`.`stg_order_items` oi
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_products` p ON (oi.product_id = p.product_id)
+)
+
+SELECT
+    op.order_id,
+    o.order_status,
+    o.order_date,
+    o.customer_id,
+    op.product_id,
+    op.product_name,
+    op.price,
+    op.quantity,
+    op.item_revenue
+
+FROM orders_products op
+LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_orders` o ON (op.order_id = o.order_id)
+
+ORDER BY order_id DESC;
+
+
+[0m19:54:45.585479 [debug] [Thread-1 (]: On model.dbt_challenge_manuable.int_customers: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.int_customers"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`int_customers`
+  OPTIONS()
+  as 
+
+WITH customer_orders AS (
+    SELECT
+        o.customer_id,
+        o.order_id,
+        o.order_date,
+        o.order_status,
+        SUM(oi.quantity * p.price) AS order_revenue
+    FROM `dbt-challenge-manuable`.`raw`.`stg_orders` o
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_order_items` oi ON (o.order_id = oi.order_id)
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_products` p ON (oi.product_id = p.product_id)
+    GROUP BY o.customer_id, o.order_id, o.order_date, o.order_status
+)
+
+SELECT
+    c.customer_id,
+    c.customer_name,
+    c.email,
+    COUNT(DISTINCT co.order_id) AS total_orders,
+    SUM(co.order_revenue) AS total_revenue,
+    MIN(co.order_date) AS first_order_date,
+    MAX(co.order_date) AS last_order_date
+FROM `dbt-challenge-manuable`.`raw`.`stg_customers` c
+LEFT JOIN customer_orders co ON (c.customer_id = co.customer_id)
+GROUP BY c.customer_id, c.customer_name, c.email
+ORDER BY customer_id DESC;
+
+
+[0m19:54:45.585479 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:54:45.585479 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:54:47.489374 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:43759d45-4e8d-46dc-9147-cabb76bc112b&page=queryresults
+[0m19:54:47.489374 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:9f0cc709-2af0-4e92-95e5-d2a6b74feacf&page=queryresults
+[0m19:54:47.888425 [debug] [Thread-2 (]: SQL status: OK in 0.407 seconds
+[0m19:54:47.888425 [debug] [Thread-1 (]: SQL status: OK in 0.406 seconds
+[0m19:54:48.205151 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA4086290>]}
+[0m19:54:48.205151 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '62f8edd2-0157-4159-8ba8-63a059f206ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018CA44A7990>]}
+[0m19:54:48.205151 [info ] [Thread-1 (]: 1 of 2 OK created sql view model raw.int_customers ............................. [[32mCREATE VIEW (0 processed)[0m in 2.71s]
+[0m19:54:48.219547 [info ] [Thread-2 (]: 2 of 2 OK created sql view model raw.int_orders ................................ [[32mCREATE VIEW (0 processed)[0m in 2.71s]
+[0m19:54:48.221064 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.int_customers
+[0m19:54:48.221064 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.int_orders
+[0m19:54:48.221064 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:54:48.274395 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:54:48.275472 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable' was properly closed.
+[0m19:54:48.275472 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m19:54:48.275472 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.int_orders' was properly closed.
+[0m19:54:48.275472 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.int_customers' was properly closed.
+[0m19:54:48.275472 [info ] [MainThread]: 
+[0m19:54:48.275472 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 5.60 seconds (5.60s).
+[0m19:54:48.275472 [debug] [MainThread]: Command end result
+[0m19:54:48.339613 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m19:54:48.342661 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m19:54:48.354884 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m19:54:48.356905 [info ] [MainThread]: 
+[0m19:54:48.359400 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:54:48.359400 [info ] [MainThread]: 
+[0m19:54:48.359400 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m19:54:48.365424 [debug] [MainThread]: Command `dbt run` succeeded at 19:54:48.365424 after 8.91 seconds
+[0m19:54:48.365424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C88CDE310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C88CDE5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C88CDE7D0>]}
+[0m19:54:48.365424 [debug] [MainThread]: Flushing usage events
+[0m19:54:49.225900 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:12:00.317485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB1525D590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB152FC2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB1525D3D0>]}
+
+
+============================== 20:12:00.333347 | a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef ==============================
+[0m20:12:00.333347 [info ] [MainThread]: Running with dbt=1.11.9
+[0m20:12:00.333347 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'invocation_command': 'dbt run --select staging', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m20:12:01.748172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB2886EDD0>]}
+[0m20:12:01.805715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB10A04590>]}
+[0m20:12:01.805715 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m20:12:02.501646 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m20:12:02.691823 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m20:12:02.691823 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\intermediate\int_orders.sql
+[0m20:12:02.691823 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\staging\stg_order_items.sql
+[0m20:12:02.994178 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_challenge_manuable.marts
+[0m20:12:03.014101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB28E9D010>]}
+[0m20:12:03.131354 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:12:03.131354 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:12:03.178925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB28C73FD0>]}
+[0m20:12:03.178925 [info ] [MainThread]: Found 8 models, 4 data tests, 4 sources, 541 macros
+[0m20:12:03.178925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB28CBDA10>]}
+[0m20:12:03.182876 [info ] [MainThread]: 
+[0m20:12:03.184890 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:12:03.184890 [info ] [MainThread]: 
+[0m20:12:03.188888 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:12:03.195077 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable'
+[0m20:12:03.195077 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:12:04.670210 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m20:12:04.670210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:12:06.107673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB11170A90>]}
+[0m20:12:06.107673 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:12:06.173041 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.stg_customers
+[0m20:12:06.173041 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.stg_order_items
+[0m20:12:06.173041 [debug] [Thread-3 (]: Began running node model.dbt_challenge_manuable.stg_orders
+[0m20:12:06.173041 [debug] [Thread-4 (]: Began running node model.dbt_challenge_manuable.stg_products
+[0m20:12:06.173041 [info ] [Thread-1 (]: 1 of 4 START sql view model raw.stg_customers .................................. [RUN]
+[0m20:12:06.179812 [info ] [Thread-2 (]: 2 of 4 START sql view model raw.stg_order_items ................................ [RUN]
+[0m20:12:06.184892 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_order_items'
+[0m20:12:06.188769 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.stg_order_items
+[0m20:12:06.179812 [info ] [Thread-4 (]: 4 of 4 START sql view model raw.stg_products ................................... [RUN]
+[0m20:12:06.179812 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_customers'
+[0m20:12:06.179812 [info ] [Thread-3 (]: 3 of 4 START sql view model raw.stg_orders ..................................... [RUN]
+[0m20:12:06.201656 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_order_items"
+[0m20:12:06.208476 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_products'
+[0m20:12:06.210225 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.stg_customers
+[0m20:12:06.210225 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_orders'
+[0m20:12:06.210225 [debug] [Thread-4 (]: Began compiling node model.dbt_challenge_manuable.stg_products
+[0m20:12:06.216534 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_customers"
+[0m20:12:06.216534 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.stg_order_items
+[0m20:12:06.216534 [debug] [Thread-3 (]: Began compiling node model.dbt_challenge_manuable.stg_orders
+[0m20:12:06.227313 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_products"
+[0m20:12:06.267707 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_challenge_manuable.stg_order_items"
+[0m20:12:06.267707 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_orders"
+[0m20:12:06.267707 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.stg_customers
+[0m20:12:06.267707 [debug] [Thread-4 (]: Began executing node model.dbt_challenge_manuable.stg_products
+[0m20:12:06.281387 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_challenge_manuable.stg_customers"
+[0m20:12:06.281387 [debug] [Thread-2 (]: On model.dbt_challenge_manuable.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.stg_order_items"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`stg_order_items`
+  OPTIONS()
+  as 
+
+SELECT DISTINCT
+  order_id,
+  product_id,
+  quantity
+
+FROM (
+  SELECT
+    order_id,
+    product_id,
+    SAFE_CAST(quantity AS INT64) AS quantity,
+    CASE -- Si el producto no existe en stg_products, lo marcamos como "NOT EXIST"
+      WHEN product_id NOT IN (SELECT product_id FROM `dbt-challenge-manuable`.`raw`.`products`)
+        THEN 'NOT EXIST'
+        ELSE product_id
+    END AS existance_condition,
+    --CASE -- Si el negativo es un error, lo marcamos como "INVALID"
+    --  WHEN SAFE_CAST(quantity AS INT64) < 0
+    --    THEN 'INVALID'
+    --END AS quantity_condition
+  FROM `dbt-challenge-manuable`.`raw`.`order_items`
+)
+
+WHERE existance_condition <> 'NOT EXIST'
+AND order_id IS NOT NULL
+ORDER BY order_id DESC;
+
+
+[0m20:12:06.281387 [debug] [Thread-3 (]: Began executing node model.dbt_challenge_manuable.stg_orders
+[0m20:12:06.281387 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_challenge_manuable.stg_products"
+[0m20:12:06.281387 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:12:06.297382 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_challenge_manuable.stg_orders"
+[0m20:12:06.297382 [debug] [Thread-1 (]: On model.dbt_challenge_manuable.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.stg_customers"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`stg_customers`
+  OPTIONS()
+  as 
+
+SELECT
+  customer_id,
+  TRIM(name) AS customer_name,
+  LOWER(TRIM(email)) AS email
+FROM `dbt-challenge-manuable`.`raw`.`customers`
+WHERE customer_id IS NOT NULL
+AND name IS NOT NULL
+ORDER BY customer_id;
+
+
+[0m20:12:06.297382 [debug] [Thread-4 (]: On model.dbt_challenge_manuable.stg_products: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.stg_products"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`stg_products`
+  OPTIONS()
+  as 
+
+SELECT DISTINCT
+  product_id,
+  TRIM(name) AS product_name,
+  SAFE_CAST(price AS NUMERIC) AS price
+FROM `dbt-challenge-manuable`.`raw`.`products`
+WHERE product_id IS NOT NULL
+ORDER BY product_id;
+
+
+[0m20:12:06.328952 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:12:06.344699 [debug] [Thread-3 (]: On model.dbt_challenge_manuable.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.stg_orders"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`stg_orders`
+  OPTIONS()
+  as 
+
+SELECT DISTINCT
+  order_id,
+  order_date,
+  order_status,
+  customer_id
+
+FROM (
+  SELECT
+    order_id,
+    SAFE_CAST(order_date AS DATE) AS order_date, -- Forzar a fecha, sino arroja null
+    LOWER(TRIM(status)) AS order_status, -- Limpiar espacios y convertir a minúsculas
+    CASE                          -- Si el producto no existe lo marcamos como "NOT EXIST"
+      WHEN customer_id NOT IN (SELECT customer_id FROM `dbt-challenge-manuable`.`raw`.`customers`)
+        THEN 'NOT EXIST'
+        ELSE customer_id
+    END AS customer_id
+  FROM `dbt-challenge-manuable`.`raw`.`orders` -- Fuente de datos
+)
+
+WHERE customer_id <> 'NOT EXIST' -- Filtrar registros con clientes no existentes
+  AND order_id IS NOT NULL -- garantiza que no haya registros de ids nulos
+ORDER BY order_id;
+
+
+[0m20:12:06.344699 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:12:06.376438 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:12:08.031416 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:608901e5-4475-44ce-ad70-6f9ad5f74a36&page=queryresults
+[0m20:12:08.031416 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:d106f8f3-6582-42b5-8679-77c9c40c2890&page=queryresults
+[0m20:12:08.035191 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:4f1e83a5-97e1-4a65-9c64-1ac19a93fd1f&page=queryresults
+[0m20:12:08.035191 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:7259bcd8-dde8-450f-b18d-da345857ebc6&page=queryresults
+[0m20:12:08.471031 [debug] [Thread-4 (]: SQL status: OK in 0.438 seconds
+[0m20:12:08.471031 [debug] [Thread-1 (]: SQL status: OK in 0.441 seconds
+[0m20:12:08.471031 [debug] [Thread-2 (]: SQL status: OK in 0.446 seconds
+[0m20:12:08.696710 [debug] [Thread-3 (]: SQL status: OK in 0.654 seconds
+[0m20:12:08.839783 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB291C9990>]}
+[0m20:12:08.839783 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB28E35FD0>]}
+[0m20:12:08.839783 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB28BEE450>]}
+[0m20:12:08.842243 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9a5d44f-6be1-40c0-9d4f-1be3f52dc9ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB291C98D0>]}
+[0m20:12:08.842243 [info ] [Thread-1 (]: 1 of 4 OK created sql view model raw.stg_customers ............................. [[32mCREATE VIEW (0 processed)[0m in 2.65s]
+[0m20:12:08.842243 [info ] [Thread-4 (]: 4 of 4 OK created sql view model raw.stg_products .............................. [[32mCREATE VIEW (0 processed)[0m in 2.63s]
+[0m20:12:08.842243 [info ] [Thread-3 (]: 3 of 4 OK created sql view model raw.stg_orders ................................ [[32mCREATE VIEW (0 processed)[0m in 2.62s]
+[0m20:12:08.842243 [info ] [Thread-2 (]: 2 of 4 OK created sql view model raw.stg_order_items ........................... [[32mCREATE VIEW (0 processed)[0m in 2.65s]
+[0m20:12:08.852486 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.stg_customers
+[0m20:12:08.854356 [debug] [Thread-4 (]: Finished running node model.dbt_challenge_manuable.stg_products
+[0m20:12:08.856004 [debug] [Thread-3 (]: Finished running node model.dbt_challenge_manuable.stg_orders
+[0m20:12:08.856004 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.stg_order_items
+[0m20:12:08.864683 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:12:08.901651 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:12:08.901651 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable' was properly closed.
+[0m20:12:08.901651 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m20:12:08.901651 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.stg_customers' was properly closed.
+[0m20:12:08.910167 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.stg_order_items' was properly closed.
+[0m20:12:08.910167 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.stg_products' was properly closed.
+[0m20:12:08.910167 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.stg_orders' was properly closed.
+[0m20:12:08.910167 [info ] [MainThread]: 
+[0m20:12:08.910167 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 5.72 seconds (5.72s).
+[0m20:12:08.910167 [debug] [MainThread]: Command end result
+[0m20:12:08.966552 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:12:08.966552 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:12:08.983180 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m20:12:08.983180 [info ] [MainThread]: 
+[0m20:12:08.983180 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:12:08.983180 [info ] [MainThread]: 
+[0m20:12:08.983180 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m20:12:08.992716 [debug] [MainThread]: Command `dbt run` succeeded at 20:12:08.992716 after 8.78 seconds
+[0m20:12:08.992716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB15323DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0D4BE7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0D4BE5D0>]}
+[0m20:12:08.995755 [debug] [MainThread]: Flushing usage events
+[0m20:12:09.751738 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:15:05.904472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD49D6E950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD49D6E0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD49D6D550>]}
+
+
+============================== 20:15:05.917294 | 266c44fb-0756-44ca-87e5-d425b0a88f08 ==============================
+[0m20:15:05.917294 [info ] [MainThread]: Running with dbt=1.11.9
+[0m20:15:05.918306 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select intermediate', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m20:15:07.384517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD5D1C4210>]}
+[0m20:15:07.488492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD454D4090>]}
+[0m20:15:07.493660 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m20:15:08.110421 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m20:15:08.329965 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m20:15:08.331981 [debug] [MainThread]: Partial parsing: updated file: dbt_challenge_manuable://models\intermediate\int_orders.sql
+[0m20:15:08.643804 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_challenge_manuable.marts
+[0m20:15:08.657823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD5D963350>]}
+[0m20:15:08.781128 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:15:08.781128 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:15:08.805361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD5DB83390>]}
+[0m20:15:08.805361 [info ] [MainThread]: Found 8 models, 4 data tests, 4 sources, 541 macros
+[0m20:15:08.807382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD5D7BCDD0>]}
+[0m20:15:08.811408 [info ] [MainThread]: 
+[0m20:15:08.813423 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:15:08.813423 [info ] [MainThread]: 
+[0m20:15:08.815444 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:15:08.823235 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable'
+[0m20:15:08.823235 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:15:10.330791 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m20:15:10.346507 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:15:11.674979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD47D8D710>]}
+[0m20:15:11.674979 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:15:11.722823 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.int_customers
+[0m20:15:11.722823 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.int_orders
+[0m20:15:11.722823 [info ] [Thread-1 (]: 1 of 2 START sql view model raw.int_customers .................................. [RUN]
+[0m20:15:11.722823 [info ] [Thread-2 (]: 2 of 2 START sql view model raw.int_orders ..................................... [RUN]
+[0m20:15:11.722823 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.int_customers'
+[0m20:15:11.722823 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.int_orders'
+[0m20:15:11.722823 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.int_customers
+[0m20:15:11.722823 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.int_orders
+[0m20:15:11.743020 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_customers"
+[0m20:15:11.750705 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_orders"
+[0m20:15:11.750705 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.int_customers
+[0m20:15:11.750705 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.int_orders
+[0m20:15:11.791433 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_challenge_manuable.int_customers"
+[0m20:15:11.810278 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_challenge_manuable.int_orders"
+[0m20:15:11.810278 [debug] [Thread-1 (]: On model.dbt_challenge_manuable.int_customers: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.int_customers"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`int_customers`
+  OPTIONS()
+  as 
+
+WITH customer_orders AS (
+    SELECT
+        o.customer_id,
+        o.order_id,
+        o.order_date,
+        o.order_status,
+        SUM(oi.quantity * p.price) AS order_revenue
+    FROM `dbt-challenge-manuable`.`raw`.`stg_orders` o
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_order_items` oi ON (o.order_id = oi.order_id)
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_products` p ON (oi.product_id = p.product_id)
+    GROUP BY o.customer_id, o.order_id, o.order_date, o.order_status
+)
+
+SELECT
+    c.customer_id,
+    c.customer_name,
+    c.email,
+    COUNT(DISTINCT co.order_id) AS total_orders,
+    SUM(co.order_revenue) AS total_revenue,
+    MIN(co.order_date) AS first_order_date,
+    MAX(co.order_date) AS last_order_date
+FROM `dbt-challenge-manuable`.`raw`.`stg_customers` c
+LEFT JOIN customer_orders co ON (c.customer_id = co.customer_id)
+GROUP BY c.customer_id, c.customer_name, c.email
+ORDER BY customer_id DESC;
+
+
+[0m20:15:11.810278 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:15:11.810278 [debug] [Thread-2 (]: On model.dbt_challenge_manuable.int_orders: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.int_orders"} */
+
+
+  create or replace view `dbt-challenge-manuable`.`raw`.`int_orders`
+  OPTIONS()
+  as 
+
+WITH orders_products AS (
+    SELECT
+        oi.order_id,
+        oi.product_id,
+        p.product_name,
+        p.price,
+        oi.quantity,
+        oi.quantity * p.price AS item_revenue
+    FROM `dbt-challenge-manuable`.`raw`.`stg_order_items` oi
+    LEFT JOIN `dbt-challenge-manuable`.`raw`.`stg_products` p ON (oi.product_id = p.product_id)
+)
+
+SELECT
+    o.order_id,
+    o.order_status,
+    o.order_date,
+    o.customer_id,
+    op.product_id,
+    op.product_name,
+    op.price,
+    op.quantity,
+    op.item_revenue
+
+FROM `dbt-challenge-manuable`.`raw`.`stg_orders` o
+LEFT JOIN orders_products op ON (o.order_id = op.order_id)
+
+ORDER BY order_id DESC;
+
+
+[0m20:15:11.854390 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:15:13.617298 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:c867301a-f6a9-4101-bc2d-ef783ebeff7a&page=queryresults
+[0m20:15:13.624403 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:7aeec1b8-f7d6-4bf8-ada6-37391ba52b08&page=queryresults
+[0m20:15:14.095152 [debug] [Thread-2 (]: SQL status: OK in 0.476 seconds
+[0m20:15:14.349528 [debug] [Thread-1 (]: SQL status: OK in 0.725 seconds
+[0m20:15:14.390962 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD5D6663D0>]}
+[0m20:15:14.390962 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '266c44fb-0756-44ca-87e5-d425b0a88f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD5D6642D0>]}
+[0m20:15:14.390962 [info ] [Thread-1 (]: 1 of 2 OK created sql view model raw.int_customers ............................. [[32mCREATE VIEW (0 processed)[0m in 2.67s]
+[0m20:15:14.390962 [info ] [Thread-2 (]: 2 of 2 OK created sql view model raw.int_orders ................................ [[32mCREATE VIEW (0 processed)[0m in 2.67s]
+[0m20:15:14.390962 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.int_customers
+[0m20:15:14.400228 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.int_orders
+[0m20:15:14.404730 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:15:14.443382 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:15:14.443382 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable' was properly closed.
+[0m20:15:14.443382 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m20:15:14.443382 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.int_customers' was properly closed.
+[0m20:15:14.443382 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.int_orders' was properly closed.
+[0m20:15:14.443382 [info ] [MainThread]: 
+[0m20:15:14.457463 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 5.63 seconds (5.63s).
+[0m20:15:14.460424 [debug] [MainThread]: Command end result
+[0m20:15:14.514415 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:15:14.514415 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:15:14.525976 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m20:15:14.532862 [info ] [MainThread]: 
+[0m20:15:14.532862 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:15:14.532862 [info ] [MainThread]: 
+[0m20:15:14.532862 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m20:15:14.532862 [debug] [MainThread]: Command `dbt run` succeeded at 20:15:14.532862 after 8.74 seconds
+[0m20:15:14.532862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD41F7E9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD41F7E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DD41F7EB50>]}
+[0m20:15:14.532862 [debug] [MainThread]: Flushing usage events
+[0m20:15:15.343750 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:22:23.818995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21D64E950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21D645450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21D64FD90>]}
+
+
+============================== 20:22:23.824555 | 98f6a16e-f739-4abe-9f69-07290d8df647 ==============================
+[0m20:22:23.824555 [info ] [MainThread]: Running with dbt=1.11.9
+[0m20:22:23.826567 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run --select marts', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m20:22:25.323361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B230B0B1D0>]}
+[0m20:22:25.426148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B218DB9C90>]}
+[0m20:22:25.428187 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m20:22:26.089401 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m20:22:26.278877 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m20:22:26.278877 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\marts\mart_orders_summary.sql
+[0m20:22:26.581093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21ABDD990>]}
+[0m20:22:26.709508 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:22:26.713054 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:22:26.730851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2310A0510>]}
+[0m20:22:26.730851 [info ] [MainThread]: Found 9 models, 4 data tests, 4 sources, 541 macros
+[0m20:22:26.730851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B23138B010>]}
+[0m20:22:26.730851 [info ] [MainThread]: 
+[0m20:22:26.730851 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:22:26.730851 [info ] [MainThread]: 
+[0m20:22:26.741662 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:22:26.742866 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable'
+[0m20:22:26.742866 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:22:28.240879 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m20:22:28.240879 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:22:29.668647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21D6B7010>]}
+[0m20:22:29.668647 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:22:29.713980 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:22:29.713980 [info ] [Thread-1 (]: 1 of 1 START sql table model raw.mart_orders_summary ........................... [RUN]
+[0m20:22:29.713980 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.mart_orders_summary'
+[0m20:22:29.713980 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:22:29.729939 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_orders_summary"
+[0m20:22:29.729939 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:22:29.802449 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_challenge_manuable.mart_orders_summary"
+[0m20:22:29.802449 [debug] [Thread-1 (]: On model.dbt_challenge_manuable.mart_orders_summary: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.mart_orders_summary"} */
+
+  
+    
+
+    create or replace table `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+SELECT
+    order_id,
+    customer_id,
+    order_date,
+    COUNT(DISTINCT product_id) AS total_items,
+    SUM(item_revenue) AS total_revenue,    
+    order_status,
+FROM `dbt-challenge-manuable`.`raw`.`int_orders`
+GROUP BY order_id, customer_id, order_date, order_status
+ORDER BY order_id DESC
+    );
+  
+[0m20:22:29.802449 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:22:31.901610 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:0919942a-bae8-4860-8bb0-a89572ba3967&page=queryresults
+[0m20:22:34.063356 [debug] [Thread-1 (]: SQL status: OK in 2.150 seconds
+[0m20:22:34.705269 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '98f6a16e-f739-4abe-9f69-07290d8df647', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B231364D90>]}
+[0m20:22:34.707019 [info ] [Thread-1 (]: 1 of 1 OK created sql table model raw.mart_orders_summary ...................... [[32mCREATE TABLE (4.0 rows, 363.0 Bytes processed)[0m in 4.99s]
+[0m20:22:34.709033 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:22:34.711043 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:22:34.758592 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:22:34.758592 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable' was properly closed.
+[0m20:22:34.758592 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m20:22:34.758592 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.mart_orders_summary' was properly closed.
+[0m20:22:34.758592 [info ] [MainThread]: 
+[0m20:22:34.758592 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 8.02 seconds (8.02s).
+[0m20:22:34.758592 [debug] [MainThread]: Command end result
+[0m20:22:34.825650 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:22:34.825650 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:22:34.842377 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m20:22:34.842377 [info ] [MainThread]: 
+[0m20:22:34.842377 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:22:34.842377 [info ] [MainThread]: 
+[0m20:22:34.842377 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m20:22:34.850477 [debug] [MainThread]: Command `dbt run` succeeded at 20:22:34.842377 after 11.17 seconds
+[0m20:22:34.851805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21D731190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21581E7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B21581E5D0>]}
+[0m20:22:34.854391 [debug] [MainThread]: Flushing usage events
+[0m20:22:35.700573 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:35:43.278623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BBCE2DD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BBCE2DAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BBCE2FC50>]}
+
+
+============================== 20:35:43.278623 | e2ab1881-2f4f-4129-9170-7f9f04fd1259 ==============================
+[0m20:35:43.278623 [info ] [MainThread]: Running with dbt=1.11.9
+[0m20:35:43.278623 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run --select marts', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m20:35:44.757292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BBCEB5490>]}
+[0m20:35:44.844704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB8599B90>]}
+[0m20:35:44.846719 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m20:35:45.500191 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m20:35:45.705513 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m20:35:45.705513 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\marts\mart_customer_ltv.sql
+[0m20:35:46.006959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BD0A5C550>]}
+[0m20:35:46.126663 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:35:46.126663 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:35:46.155909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BD0825F50>]}
+[0m20:35:46.157929 [info ] [MainThread]: Found 10 models, 4 data tests, 4 sources, 541 macros
+[0m20:35:46.157929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BD0878C50>]}
+[0m20:35:46.157929 [info ] [MainThread]: 
+[0m20:35:46.157929 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:35:46.157929 [info ] [MainThread]: 
+[0m20:35:46.166147 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:35:46.172123 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable'
+[0m20:35:46.174227 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:35:47.631096 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m20:35:47.631096 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:35:48.862275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BD0A70E90>]}
+[0m20:35:48.866634 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:35:48.914094 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.mart_customer_ltv
+[0m20:35:48.914094 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:35:48.914094 [info ] [Thread-1 (]: 1 of 2 START sql table model raw.mart_customer_ltv ............................. [RUN]
+[0m20:35:48.923926 [info ] [Thread-2 (]: 2 of 2 START sql table model raw.mart_orders_summary ........................... [RUN]
+[0m20:35:48.923926 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.mart_customer_ltv'
+[0m20:35:48.923926 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.mart_orders_summary'
+[0m20:35:48.923926 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.mart_customer_ltv
+[0m20:35:48.923926 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:35:48.937929 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_customer_ltv"
+[0m20:35:48.948223 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_orders_summary"
+[0m20:35:48.950640 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.mart_customer_ltv
+[0m20:35:48.953953 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:35:48.994998 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:35:49.012450 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_challenge_manuable.mart_customer_ltv"
+[0m20:35:49.040948 [debug] [Thread-1 (]: On model.dbt_challenge_manuable.mart_customer_ltv: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.mart_customer_ltv"} */
+
+  
+    
+
+    create or replace table `dbt-challenge-manuable`.`raw`.`mart_customer_ltv`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+SELECT
+    customer_id,
+    customer_name,
+    email,
+    first_order_date,
+    last_order_date,
+    total_orders,
+    total_revenue,
+    CASE
+        WHEN total_revenue >5000 THEN 'VIP'
+        WHEN total_revenue >500 THEN 'Regular'
+        WHEN total_orders <2 THEN 'NUEVO'
+    END AS customer_segment
+FROM `dbt-challenge-manuable`.`raw`.`int_customers`
+    );
+  
+[0m20:35:49.056682 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:35:50.289261 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_challenge_manuable.mart_orders_summary"
+[0m20:35:50.293247 [debug] [Thread-2 (]: On model.dbt_challenge_manuable.mart_orders_summary: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "node_id": "model.dbt_challenge_manuable.mart_orders_summary"} */
+
+  
+    
+
+    create or replace table `dbt-challenge-manuable`.`raw`.`mart_orders_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+SELECT
+    order_id,
+    customer_id,
+    order_date,
+    COUNT(DISTINCT product_id) AS total_items,
+    SUM(item_revenue) AS total_revenue,    
+    order_status,
+FROM `dbt-challenge-manuable`.`raw`.`int_orders`
+GROUP BY order_id, customer_id, order_date, order_status
+ORDER BY order_id DESC
+    );
+  
+[0m20:35:50.798413 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:21537538-a7f0-4e99-a876-50370dba7bfb&page=queryresults
+[0m20:35:51.103890 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:4e04ea38-f21d-4035-92c3-5f1e0ebf35af&page=queryresults
+[0m20:35:53.156360 [debug] [Thread-2 (]: SQL status: OK in 2.048 seconds
+[0m20:35:53.504812 [debug] [Thread-1 (]: SQL status: OK in 2.708 seconds
+[0m20:35:53.810740 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BD0402AD0>]}
+[0m20:35:53.810740 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e2ab1881-2f4f-4129-9170-7f9f04fd1259', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BD03A9910>]}
+[0m20:35:53.815043 [info ] [Thread-1 (]: 1 of 2 OK created sql table model raw.mart_customer_ltv ........................ [[32mCREATE TABLE (2.0 rows, 446.0 Bytes processed)[0m in 4.89s]
+[0m20:35:53.815043 [info ] [Thread-2 (]: 2 of 2 OK created sql table model raw.mart_orders_summary ...................... [[32mCREATE TABLE (4.0 rows, 363.0 Bytes processed)[0m in 4.89s]
+[0m20:35:53.815043 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.mart_customer_ltv
+[0m20:35:53.820219 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.mart_orders_summary
+[0m20:35:53.820219 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:35:53.868017 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:35:53.868017 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable' was properly closed.
+[0m20:35:53.869584 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m20:35:53.869584 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.mart_customer_ltv' was properly closed.
+[0m20:35:53.869584 [debug] [MainThread]: Connection 'model.dbt_challenge_manuable.mart_orders_summary' was properly closed.
+[0m20:35:53.869584 [info ] [MainThread]: 
+[0m20:35:53.874596 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 7.70 seconds (7.70s).
+[0m20:35:53.876204 [debug] [MainThread]: Command end result
+[0m20:35:53.933823 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m20:35:53.933823 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m20:35:53.950450 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m20:35:53.952873 [info ] [MainThread]: 
+[0m20:35:53.952873 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:35:53.952873 [info ] [MainThread]: 
+[0m20:35:53.952873 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m20:35:53.958589 [debug] [MainThread]: Command `dbt run` succeeded at 20:35:53.958589 after 10.78 seconds
+[0m20:35:53.960131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BBBC04CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB508E5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BB508E9D0>]}
+[0m20:35:53.962288 [debug] [MainThread]: Flushing usage events
+[0m20:35:54.795563 [debug] [MainThread]: An error was encountered while trying to flush usage events

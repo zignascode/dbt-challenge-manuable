@@ -15,14 +15,13 @@ FROM (
         THEN 'NOT EXIST'
         ELSE product_id
     END AS existance_condition,
-    CASE -- Si la cantidad es negativa, lo marcamos como "INVALID"
-      WHEN SAFE_CAST(quantity AS INT64) < 0
-        THEN 'INVALID'
-    END AS quantity_condition
+    --CASE -- Si el negativo es un error, lo marcamos como "INVALID"
+    --  WHEN SAFE_CAST(quantity AS INT64) < 0
+    --    THEN 'INVALID'
+    --END AS quantity_condition
   FROM {{ source('raw','order_items') }}
 )
 
 WHERE existance_condition <> 'NOT EXIST'
-AND quantity_condition IS NULL
 AND order_id IS NOT NULL
 ORDER BY order_id DESC
