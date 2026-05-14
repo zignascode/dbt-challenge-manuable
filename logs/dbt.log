@@ -13369,3 +13369,1577 @@ having count(*) > 1
 [0m06:02:20.849770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a51b391e0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a51b391e110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a51af0f18d0>]}
 [0m06:02:20.852140 [debug] [MainThread]: Flushing usage events
 [0m06:02:21.148486 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:41:58.445257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000167756B8990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000167756BA010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000167756B9F10>]}
+
+
+============================== 06:41:58.462301 | ee70cb12-9a93-4aa8-8d83-08d15b75028d ==============================
+[0m06:41:58.462301 [info ] [MainThread]: Running with dbt=1.11.9
+[0m06:41:58.462301 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m06:42:00.819944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee70cb12-9a93-4aa8-8d83-08d15b75028d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001670AC220D0>]}
+[0m06:42:00.885940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ee70cb12-9a93-4aa8-8d83-08d15b75028d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016771DC8C50>]}
+[0m06:42:00.887954 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m06:42:01.562635 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m06:42:01.798223 [debug] [MainThread]: Partial parsing enabled: 179 files deleted, 179 files added, 0 files changed.
+[0m06:42:01.798223 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\column_helpers.sql
+[0m06:42:01.798223 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\columns.sql
+[0m06:42:01.798223 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\replace.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\marts\mart_customer_ltv.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\position.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\datediff.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\cast_bool_to_text.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\any_value.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\alter.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\copy.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\replace.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\date_trunc.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\metadata.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\relationships.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\create.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\rename.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_customers.sql
+[0m06:42:01.814339 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\options.sql
+[0m06:42:01.823821 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://macros\customer_segment.sql
+[0m06:42:01.823821 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\table.sql
+[0m06:42:01.823821 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\timestamps.sql
+[0m06:42:01.823821 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\rename.sql
+[0m06:42:01.825834 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\drop.sql
+[0m06:42:01.825834 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\position.sql
+[0m06:42:01.825834 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\bool_or.sql
+[0m06:42:01.827848 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\equals.sql
+[0m06:42:01.827848 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\refresh.sql
+[0m06:42:01.827848 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\etc.sql
+[0m06:42:01.827848 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\clone.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\array_construct.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\datediff.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\safe_cast.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\except.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\python_model\python.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\schema.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\functions\scalar.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\is_incremental.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\etc\statement.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\not_null.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\schema.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\timestamps.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\helpers.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\generate_series.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\drop.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\alter.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\data_types.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\listagg.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\show.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\length.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\aggregate.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\rename.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\drop.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\view.sql
+[0m06:42:01.829861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\right.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\get_custom_name\get_custom_database.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\replace.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\intermediate\int_customers.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\hooks.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\table.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\split_part.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\unique.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\persist_docs.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\last_day.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\scalar.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\intersect.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\indexes.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\create_intermediate.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\partition.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\schema.yml
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\string_literal.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\unit.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\escape_single_quotes.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\create.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\snapshot.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\rename_intermediate.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\get_custom_name\get_custom_schema.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\create.sql
+[0m06:42:01.845938 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\where_subquery.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\seed.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\strategies.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\drop.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\function.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\merge.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\python_model\python.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\rename.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\insert_overwrite.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\cast.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\materialized_view.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\apply_grants.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\intermediate\int_orders.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\array_append.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\merge.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\accepted_values.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\table\options.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\clone\can_clone_table.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\on_schema_change.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\listagg.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\drop.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\view.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\except.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date_spine.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\seeds\helpers.sql
+[0m06:42:01.861978 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\split_part.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\relation.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\array_construct.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\refresh.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt://docs\overview.md
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\snapshot_merge.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\time_ingestion_tables.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\create.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\safe_cast.sql
+[0m06:42:01.877710 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\materialized_view.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://macros\normalize_text.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\date.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\replace.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\adapters\apply_grants.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://macros\etc\datetime.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\functions\aggregate.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\replace.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\test.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\rename.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\helpers.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_products.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\adapters.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://macros\get_custom_name\get_custom_alias.sql
+[0m06:42:01.885036 [debug] [MainThread]: Partial parsing: added file: dbt://tests\generic\builtin.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\options.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\common.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\intersect.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\strategies.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\catalog\catalog.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\column\columns_spec_ddl.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\freshness.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\drop_backup.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\table\rename.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\clone\create_or_replace_clone.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\right.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\dateadd.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\configs.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\validate_sql.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\drop.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\metadata.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\snapshot.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\replace.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\adapters\columns.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\dateadd.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\create_backup.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_orders.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\array_concat.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\create.sql
+[0m06:42:01.893427 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\marts\mart_orders_summary.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\catalog\by_schema.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\microbatch.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\array_append.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\get_columns_spec_ddl.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\table\drop.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\cluster.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\replace.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\literal.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\drop.sql
+[0m06:42:01.909540 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\catalog\by_relation.sql
+[0m06:42:01.915840 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\models\incremental\on_schema_change.sql
+[0m06:42:01.915840 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\hash.sql
+[0m06:42:01.915840 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\rename.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\helpers.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://tests\test_orders_revenue_positive.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\incremental.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\seeds\seed.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\concat.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\escape_single_quotes.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_order_items.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\clone\clone.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date_trunc.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\bool_or.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\hash.sql
+[0m06:42:01.917851 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\array_concat.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/materialized_view/refresh.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/table.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/hash.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/metadata.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/generic_test_sql/relationships.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/cast.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/table.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/table/drop.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/array_concat.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/view.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/catalog/catalog.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/listagg.sql
+[0m06:42:01.925174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/datediff.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/intermediate/int_customers.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/position.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/materialized_view/drop.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/view/drop.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/array_append.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/materialized_view/create.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/etc/datetime.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/table/drop.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/table/create.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/bool_or.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/get_custom_name/get_custom_alias.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/timestamps.sql
+[0m06:42:01.933397 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/seeds/seed.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/view/replace.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/length.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/clone/clone.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/view/rename.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/view.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/equals.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/incremental.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/seeds/helpers.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/escape_single_quotes.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/adapters/apply_grants.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/generic_test_sql/unique.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/staging/stg_order_items.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/python_model/python.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/table/rename.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/create_intermediate.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/clone.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/materialized_view/replace.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/materialized_view/alter.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/unit_test_sql/get_fixture_sql.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/replace.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/hash.sql
+[0m06:42:01.941058 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/dateadd.sql
+[0m06:42:01.954999 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/date.sql
+[0m06:42:01.954999 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/array_concat.sql
+[0m06:42:01.954999 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/schema.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://macros/customer_segment.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/incremental_strategy/merge.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/freshness.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/functions/scalar.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/snapshots/helpers.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/copy.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/array_construct.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/functions/aggregate.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/rename.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/snapshots/strategies.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/materialized_view/create.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/incremental_strategy/common.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/view/create.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/clone/can_clone_table.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/except.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/tests/helpers.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/python_model/python.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/metadata.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://tests/generic/builtin.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/catalog/by_schema.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/generate_series.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/view/rename.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/view/options.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/adapters.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/materialized_view.sql
+[0m06:42:01.956748 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/escape_single_quotes.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/bool_or.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/catalog/by_relation.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/array_construct.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/column/columns_spec_ddl.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/seed.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/tests/test.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/drop_backup.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/snapshots/snapshot.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/columns.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/except.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/get_custom_name/get_custom_database.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/get_columns_spec_ddl.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/date_trunc.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/date_spine.sql
+[0m06:42:01.972780 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/clone/create_or_replace_clone.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/snapshot.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/table/replace.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/rename_intermediate.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/table/options.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/safe_cast.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/datediff.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/generic_test_sql/accepted_values.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/etc.sql
+[0m06:42:01.983129 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/table/rename.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/functions/function.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/dateadd.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/safe_cast.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/models/incremental/on_schema_change.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/incremental/on_schema_change.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/right.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/staging/stg_customers.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/functions/scalar.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/string_literal.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/view/drop.sql
+[0m06:42:01.988586 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/options.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/get_custom_name/get_custom_schema.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/cast_bool_to_text.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/incremental_strategy/microbatch.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/tests/unit.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/right.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/materialized_view/replace.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/schema.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/view/replace.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/date_trunc.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/replace.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/create_backup.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/apply_grants.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/adapters/columns.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/materialized_view.sql
+[0m06:42:01.995107 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/functions/helpers.sql
+[0m06:42:02.004436 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/tests/where_subquery.sql
+[0m06:42:02.004436 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/partition.sql
+[0m06:42:02.004436 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/configs.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://macros/normalize_text.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/intermediate/int_orders.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/etc/statement.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/relation.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/generic_test_sql/not_null.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/show.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/staging/stg_orders.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/persist_docs.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/functions/aggregate.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/concat.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/incremental/strategies.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/data_types.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/incremental_strategy/time_ingestion_tables.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/materialized_view/drop.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/materializations/incremental_strategy/insert_overwrite.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/snapshots/snapshot_merge.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/incremental/is_incremental.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/split_part.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/listagg.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/incremental/incremental.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/position.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/literal.sql
+[0m06:42:02.006450 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/split_part.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/drop.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/staging/stg_products.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/intersect.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/validate_sql.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/create.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://docs/overview.md
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/marts/mart_orders_summary.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/rename.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/materialized_view/refresh.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/last_day.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/drop.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/timestamps.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/relations/materialized_view/rename.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/date.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/utils/array_append.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://tests/test_orders_revenue_positive.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/intersect.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/cluster.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/adapters/indexes.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_bigquery://macros/relations/materialized_view/alter.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/incremental/column_helpers.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/models/incremental/merge.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/materializations/hooks.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros/utils/any_value.sql
+[0m06:42:02.020282 [debug] [MainThread]: Partial parsing: deleted file: dbt_challenge_manuable://models/marts/mart_customer_ltv.sql
+[0m06:42:02.020282 [error] [MainThread]: Encountered an error:
+'dbt_challenge_manuable://macros\\customer_segment.sql'
+[0m06:42:02.036045 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 407, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 434, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\parser\manifest.py", line 2257, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\parser\manifest.py", line 323, in get_full_manifest
+    manifest = loader.load()
+               ^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\parser\manifest.py", line 392, in load
+    self.load_and_parse_macros(project_parser_files)
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\parser\manifest.py", line 707, in load_and_parse_macros
+    block = FileBlock(self.manifest.files[file_id])
+                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'dbt_challenge_manuable://macros\\customer_segment.sql'
+
+[0m06:42:02.036045 [debug] [MainThread]: Command `dbt docs generate` failed at 06:42:02.036045 after 3.68 seconds
+[0m06:42:02.036045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001670B0FD550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000167766FE390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000167756AE190>]}
+[0m06:42:02.036045 [debug] [MainThread]: Flushing usage events
+[0m06:42:02.886710 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:53:25.290458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7818823c9c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7818823b91d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7818823c9590>]}
+
+
+============================== 06:53:25.297888 | 2e2a70ff-e5c0-4dac-be1e-093726de76b0 ==============================
+[0m06:53:25.297888 [info ] [MainThread]: Running with dbt=1.11.9
+[0m06:53:25.300396 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'cache_selected_only': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'quiet': 'False', 'log_path': '/mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/logs', 'profiles_dir': '/home/linux_zignas/.dbt', 'printer_width': '80', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m06:53:27.304523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185a9f3050>]}
+[0m06:53:27.363169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7818852a4150>]}
+[0m06:53:27.365224 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m06:53:27.502991 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m06:53:27.507313 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:53:27.509045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185a78fc90>]}
+[0m06:53:29.161325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185a7b7390>]}
+[0m06:53:29.189081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185abeead0>]}
+[0m06:53:29.190753 [info ] [MainThread]: Found 8 models, 21 data tests, 4 sources, 543 macros
+[0m06:53:29.192451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185945da90>]}
+[0m06:53:29.196260 [info ] [MainThread]: 
+[0m06:53:29.198220 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m06:53:29.199975 [info ] [MainThread]: 
+[0m06:53:29.201861 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m06:53:29.207321 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m06:53:29.209013 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:53:30.147541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e2a70ff-e5c0-4dac-be1e-093726de76b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185a7b4350>]}
+[0m06:53:30.149245 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:53:30.191217 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.stg_customers
+[0m06:53:30.191705 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.stg_order_items
+[0m06:53:30.192270 [debug] [Thread-3 (]: Began running node model.dbt_challenge_manuable.stg_orders
+[0m06:53:30.192703 [debug] [Thread-4 (]: Began running node model.dbt_challenge_manuable.stg_products
+[0m06:53:30.193960 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt-challenge-manuable_raw, now model.dbt_challenge_manuable.stg_customers)
+[0m06:53:30.195856 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_order_items'
+[0m06:53:30.197737 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_orders'
+[0m06:53:30.199655 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_products'
+[0m06:53:30.201419 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.stg_customers
+[0m06:53:30.203233 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.stg_order_items
+[0m06:53:30.205062 [debug] [Thread-3 (]: Began compiling node model.dbt_challenge_manuable.stg_orders
+[0m06:53:30.206679 [debug] [Thread-4 (]: Began compiling node model.dbt_challenge_manuable.stg_products
+[0m06:53:30.216164 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_customers"
+[0m06:53:30.220670 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_order_items"
+[0m06:53:30.226514 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_orders"
+[0m06:53:30.231608 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_products"
+[0m06:53:30.257175 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.stg_order_items
+[0m06:53:30.259175 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m06:53:30.260235 [debug] [Thread-4 (]: Began executing node model.dbt_challenge_manuable.stg_products
+[0m06:53:30.263333 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.stg_customers
+[0m06:53:30.264688 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m06:53:30.266808 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:30.299000 [debug] [Thread-3 (]: Began executing node model.dbt_challenge_manuable.stg_orders
+[0m06:53:30.301672 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.stg_order_items
+[0m06:53:30.336926 [debug] [Thread-4 (]: Finished running node model.dbt_challenge_manuable.stg_products
+[0m06:53:30.338099 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m06:53:30.372821 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.stg_customers
+[0m06:53:30.373448 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:53:30.374927 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:53:30.377610 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:53:30.379684 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_order_items, now test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96)
+[0m06:53:30.413542 [debug] [Thread-3 (]: Finished running node model.dbt_challenge_manuable.stg_orders
+[0m06:53:30.414002 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_products, now test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6)
+[0m06:53:30.415794 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_customers, now test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4)
+[0m06:53:30.417400 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:53:30.418956 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:53:30.420455 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:53:30.422091 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:53:30.430885 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"
+[0m06:53:30.432560 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_orders, now test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3)
+[0m06:53:30.437947 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"
+[0m06:53:30.443016 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"
+[0m06:53:30.446267 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:53:30.455887 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"
+[0m06:53:30.464634 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:53:30.466650 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:30.467290 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:53:30.469670 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:53:30.470458 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:30.472549 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:53:30.473408 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:53:30.508190 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:53:30.543099 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:53:30.544731 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:53:30.578708 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:53:30.580218 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:53:30.581516 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:53:30.584245 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96, now test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c)
+[0m06:53:30.585985 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:53:30.619646 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4, now test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467)
+[0m06:53:30.620625 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:53:30.622469 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:53:30.624218 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6, now test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m06:53:30.625736 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:53:30.627287 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:53:30.636276 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m06:53:30.637835 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:53:30.644438 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"
+[0m06:53:30.646234 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3, now test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533)
+[0m06:53:30.652387 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m06:53:30.655243 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:53:30.662659 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"
+[0m06:53:30.663188 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:53:30.665692 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:53:30.666314 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:53:30.667403 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:30.669280 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:30.670002 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:53:30.671137 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:53:30.675174 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:53:30.742181 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:53:30.743458 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:53:30.779231 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:53:30.780253 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:53:30.815546 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.int_customers
+[0m06:53:30.817984 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:53:30.820828 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c, now test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada)
+[0m06:53:30.824320 [debug] [Thread-4 (]: Began running node model.dbt_challenge_manuable.int_orders
+[0m06:53:30.826773 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467, now model.dbt_challenge_manuable.int_customers)
+[0m06:53:30.829420 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:53:30.831475 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:53:30.834063 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa, now model.dbt_challenge_manuable.int_orders)
+[0m06:53:30.836324 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.int_customers
+[0m06:53:30.838412 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533, now test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a)
+[0m06:53:30.843651 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"
+[0m06:53:30.845868 [debug] [Thread-4 (]: Began compiling node model.dbt_challenge_manuable.int_orders
+[0m06:53:30.850615 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_customers"
+[0m06:53:30.852390 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:53:30.858424 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_orders"
+[0m06:53:30.865906 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"
+[0m06:53:30.868672 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:53:30.871354 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:30.876292 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.int_customers
+[0m06:53:30.876882 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:53:30.911323 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:30.913279 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:53:30.913789 [debug] [Thread-4 (]: Began executing node model.dbt_challenge_manuable.int_orders
+[0m06:53:30.914541 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:53:30.917096 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:53:30.918833 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:53:30.953808 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.int_customers
+[0m06:53:30.955015 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada, now test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m06:53:30.989904 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:53:30.991297 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:53:31.024714 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:53:31.026103 [debug] [Thread-4 (]: Finished running node model.dbt_challenge_manuable.int_orders
+[0m06:53:31.027380 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:53:31.029507 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.int_customers, now test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64)
+[0m06:53:31.034994 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m06:53:31.036955 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:53:31.038675 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a, now test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54)
+[0m06:53:31.040101 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:53:31.042679 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.int_orders, now test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a)
+[0m06:53:31.044211 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:53:31.053004 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"
+[0m06:53:31.054560 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:53:31.055666 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:53:31.060925 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m06:53:31.067926 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"
+[0m06:53:31.069900 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:31.074941 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:53:31.077327 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:31.078158 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:53:31.114556 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:53:31.115345 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:53:31.116640 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:53:31.119125 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:53:31.157372 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:53:31.157866 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:53:31.160574 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5, now model.dbt_challenge_manuable.mart_customer_ltv)
+[0m06:53:31.163234 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:53:31.197103 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:53:31.198865 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:53:31.200567 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64, now model.dbt_challenge_manuable.mart_orders_summary)
+[0m06:53:31.235193 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:53:31.240232 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_customer_ltv"
+[0m06:53:31.242192 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:53:31.248733 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_orders_summary"
+[0m06:53:31.257236 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:53:31.258851 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:31.261680 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:53:31.263259 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:31.298504 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:53:31.300971 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:53:31.301648 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:53:31.334907 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:53:31.336925 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:53:31.337393 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54, now test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947)
+[0m06:53:31.339172 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a, now test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b)
+[0m06:53:31.340792 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.mart_customer_ltv, now test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859)
+[0m06:53:31.342939 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:53:31.344199 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:53:31.346200 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:53:31.347614 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:53:31.349194 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.mart_orders_summary, now test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e)
+[0m06:53:31.354551 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947"
+[0m06:53:31.360236 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"
+[0m06:53:31.365859 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"
+[0m06:53:31.367609 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:53:31.376864 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"
+[0m06:53:31.379708 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:53:31.380232 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:53:31.381548 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:53:31.382236 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:53:31.383967 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:53:31.384706 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:53:31.385973 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:31.389832 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:53:31.455944 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:53:31.456896 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:53:31.492338 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:53:31.493809 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:53:31.526827 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:53:31.529399 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:53:31.530330 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b, now test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e)
+[0m06:53:31.532023 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:53:31.533846 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947, now test.dbt_challenge_manuable.test_orders_revenue_positive)
+[0m06:53:31.537357 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:53:31.539560 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859, now test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324)
+[0m06:53:31.541750 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:53:31.549524 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"
+[0m06:53:31.550891 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:53:31.554862 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.test_orders_revenue_positive"
+[0m06:53:31.562005 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"
+[0m06:53:31.568734 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:53:31.570916 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:53:31.571578 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:53:31.572228 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:53:31.574503 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:53:31.576150 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:53:31.611029 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:53:31.646989 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:53:31.681427 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:53:31.684629 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:53:31.686234 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e' was properly closed.
+[0m06:53:31.687535 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324' was properly closed.
+[0m06:53:31.688771 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.test_orders_revenue_positive' was properly closed.
+[0m06:53:31.690187 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e' was properly closed.
+[0m06:53:31.694452 [debug] [MainThread]: Command end result
+[0m06:53:31.810944 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/manifest.json
+[0m06:53:31.820190 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/semantic_manifest.json
+[0m06:53:31.834971 [debug] [MainThread]: Wrote artifact RunExecutionResult to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/run_results.json
+[0m06:53:31.865587 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m06:53:31.867114 [info ] [MainThread]: Building catalog
+[0m06:53:31.873806 [debug] [ThreadPool]: Acquiring new bigquery connection 'dbt-challenge-manuable.information_schema'
+[0m06:53:31.894377 [debug] [ThreadPool]: On dbt-challenge-manuable.information_schema: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "connection_name": "dbt-challenge-manuable.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `dbt-challenge-manuable`.`raw`.__TABLES__ tables
+    left join `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('int_customers')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('int_orders')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_products')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('orders')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_order_items')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('mart_orders_summary')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('customers')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_orders')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('mart_customer_ltv')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('products')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_customers')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('order_items')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.COLUMNS columns
+    join `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m06:53:31.897919 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:53:32.772083 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:c62ae906-6c23-496f-9836-0d035b0c2941&page=queryresults
+[0m06:53:34.178632 [debug] [ThreadPool]: SQL status: OK in 1.404 seconds
+[0m06:53:34.607686 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:53:34.661048 [debug] [MainThread]: Wrote artifact CatalogArtifact to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/catalog.json
+[0m06:53:34.710598 [debug] [MainThread]: Wrote artifact WritableManifest to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/manifest.json
+[0m06:53:34.718718 [debug] [MainThread]: Wrote artifact SemanticManifest to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/semantic_manifest.json
+[0m06:53:34.720159 [info ] [MainThread]: Catalog written to /mnt/c/Users/mar_z/Desktop/dbt-challenge-manuable/target/catalog.json
+[0m06:53:34.722304 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 9.512032, "process_in_blocks": "318448", "process_kernel_time": 1.262474, "process_mem_max_rss": "250192", "process_out_blocks": "0", "process_user_time": 6.260104}
+[0m06:53:34.724143 [debug] [MainThread]: Command `dbt docs generate` succeeded at 06:53:34.723928 after 9.51 seconds
+[0m06:53:34.725536 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m06:53:34.727264 [debug] [MainThread]: Connection 'dbt-challenge-manuable.information_schema' was properly closed.
+[0m06:53:34.729716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78188228d890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185aa34bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78185a7164d0>]}
+[0m06:53:34.731635 [debug] [MainThread]: Flushing usage events
+[0m06:53:35.064496 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:55:01.604464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC70A8A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC70AA250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC70A9390>]}
+
+
+============================== 06:55:01.610852 | 6b1fe06e-d17f-4775-b406-084f5b16ae4e ==============================
+[0m06:55:01.610852 [info ] [MainThread]: Running with dbt=1.11.9
+[0m06:55:01.610852 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m06:55:03.939297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDDB5B9150>]}
+[0m06:55:03.984241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC37B8950>]}
+[0m06:55:03.984241 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m06:55:04.671156 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m06:55:04.883290 [debug] [MainThread]: Partial parsing enabled: 179 files deleted, 179 files added, 0 files changed.
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\options.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\drop.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date_spine.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\replace.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\seeds\helpers.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\clone\clone.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\listagg.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\clone.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\adapters\columns.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\array_append.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\copy.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\create.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\where_subquery.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\create_intermediate.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\options.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\refresh.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\merge.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\etc.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\models\incremental\on_schema_change.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\schema.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\on_schema_change.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\replace.sql
+[0m06:55:04.899314 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\intermediate\int_customers.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_products.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\relation.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\safe_cast.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\drop.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\right.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\functions\scalar.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\helpers.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\scalar.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\snapshot.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\schema.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\bool_or.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\hash.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental.sql
+[0m06:55:04.915017 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\snapshot_merge.sql
+[0m06:55:04.923848 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\refresh.sql
+[0m06:55:04.923848 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\marts\mart_customer_ltv.sql
+[0m06:55:04.923848 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\python_model\python.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\except.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\seeds\seed.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\dateadd.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\table.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\cast_bool_to_text.sql
+[0m06:55:04.925861 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\drop.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\get_custom_name\get_custom_schema.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\listagg.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_customers.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\partition.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\length.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\catalog\catalog.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\concat.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://tests\generic\builtin.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\date_trunc.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\microbatch.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\replace.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\function.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\helpers.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\relationships.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\date.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\materialized_view.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\create.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\unique.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\drop.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\table\drop.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\metadata.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\view.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\view.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\time_ingestion_tables.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\incremental.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\drop.sql
+[0m06:55:04.930799 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\show.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\rename_intermediate.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\clone\create_or_replace_clone.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\array_construct.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\datediff.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\columns.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\column_helpers.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\replace.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\snapshot.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\column\columns_spec_ddl.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\functions\aggregate.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\accepted_values.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\position.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\seed.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\etc\datetime.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\table.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\escape_single_quotes.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\intermediate\int_orders.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\generate_series.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\split_part.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\strategies.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\rename.sql
+[0m06:55:04.946832 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\drop.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\dateadd.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\drop.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\clone\can_clone_table.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\array_concat.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\materialized_view.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\persist_docs.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\catalog\by_schema.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\marts\mart_orders_summary.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\literal.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\schema.yml
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\replace.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\bool_or.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\validate_sql.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\create.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_order_items.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\insert_overwrite.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\etc\statement.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\create_backup.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://models\staging\stg_orders.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\view\rename.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\merge.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt://macros\generic_test_sql\not_null.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\array_append.sql
+[0m06:55:04.962606 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\split_part.sql
+[0m06:55:04.978424 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\replace.sql
+[0m06:55:04.978424 [debug] [MainThread]: Partial parsing: added file: dbt://docs\overview.md
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\adapters\apply_grants.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\adapters.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\create.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\hooks.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\configs.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\array_concat.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\safe_cast.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://macros\customer_segment.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\cast.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\materializations\incremental_strategy\common.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://tests\test_orders_revenue_positive.sql
+[0m06:55:04.980460 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\last_day.sql
+[0m06:55:04.990769 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\timestamps.sql
+[0m06:55:04.991075 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\alter.sql
+[0m06:55:04.992315 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\table\rename.sql
+[0m06:55:04.993323 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\right.sql
+[0m06:55:04.994318 [debug] [MainThread]: Partial parsing: added file: dbt_challenge_manuable://macros\normalize_text.sql
+[0m06:55:04.994318 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\rename.sql
+[0m06:55:04.995317 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\date_trunc.sql
+[0m06:55:04.996309 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\materialized_view\alter.sql
+[0m06:55:04.997312 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\any_value.sql
+[0m06:55:04.997920 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\except.sql
+[0m06:55:04.999055 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\datediff.sql
+[0m06:55:04.999055 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\aggregate.sql
+[0m06:55:05.000054 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\test.sql
+[0m06:55:05.001051 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\cluster.sql
+[0m06:55:05.001051 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\data_types.sql
+[0m06:55:05.002051 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\intersect.sql
+[0m06:55:05.002904 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\freshness.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\get_custom_name\get_custom_database.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\functions\helpers.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\snapshots\strategies.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\create.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\models\incremental\is_incremental.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\drop_backup.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\get_columns_spec_ddl.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\indexes.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\timestamps.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\escape_single_quotes.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\table\rename.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\apply_grants.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\materialized_view\rename.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\rename.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\materializations\tests\unit.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\catalog\by_relation.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\hash.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\position.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\string_literal.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\get_custom_name\get_custom_alias.sql
+[0m06:55:05.003801 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\intersect.sql
+[0m06:55:05.019227 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\utils\array_construct.sql
+[0m06:55:05.019913 [debug] [MainThread]: Partial parsing: added file: dbt://macros\relations\view\replace.sql
+[0m06:55:05.021075 [debug] [MainThread]: Partial parsing: added file: dbt://macros\utils\equals.sql
+[0m06:55:05.021075 [debug] [MainThread]: Partial parsing: added file: dbt://macros\adapters\metadata.sql
+[0m06:55:05.022076 [debug] [MainThread]: Partial parsing: added file: dbt://macros\python_model\python.sql
+[0m06:55:05.022076 [debug] [MainThread]: Partial parsing: added file: dbt_bigquery://macros\relations\table\options.sql
+[0m06:55:05.023077 [info ] [MainThread]: Unable to do partial parsing because an error occurred. Switching to full reparse.
+[0m06:55:05.026262 [debug] [MainThread]: Partial parsing exception processing file dbt_challenge_manuable://models/schema.yml
+[0m06:55:05.027272 [debug] [MainThread]: PP exception info: {'code': 'new_source_file = deepcopy(self.new_files[file_id])', 'location': 'line 313 in update_in_saved', 'exception': "KeyError: 'dbt_challenge_manuable://models/staging/stg_order_items.sql'", 'traceback': 'Traceback (most recent call last):\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\manifest.py", line 554, in safe_update_project_parser_files_partially\n    project_parser_files = self.partial_parser.get_parsing_files()\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 198, in get_parsing_files\n    self.delete_schema_file(file_id)\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 717, in delete_schema_file\n    self.handle_schema_file_changes(saved_schema_file, saved_yaml_dict, new_yaml_dict)\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 743, in handle_schema_file_changes\n    self.delete_schema_mssa_links(schema_file, dict_key, elem)\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 911, in delete_schema_mssa_links\n    self._delete_schema_mssa_links(schema_file, dict_key, elem, elem_unique_ids)\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 964, in _delete_schema_mssa_links\n    self.remove_tests(schema_file, dict_key, elem["name"])\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 982, in remove_tests\n    self.update_in_saved(attached_node.file_id)\n  File "C:\\Users\\mar_z\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\dbt\\parser\\partial.py", line 313, in update_in_saved\n    new_source_file = deepcopy(self.new_files[file_id])\n                               ~~~~~~~~~~~~~~^^^^^^^^^\nKeyError: \'dbt_challenge_manuable://models/staging/stg_order_items.sql\'\n', 'parse_file_type': 'schema'}
+[0m06:55:05.028273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDDBBB06D0>]}
+[0m06:55:06.521903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDDBF99F90>]}
+[0m06:55:06.553417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDDBB4C4D0>]}
+[0m06:55:06.553417 [info ] [MainThread]: Found 8 models, 21 data tests, 4 sources, 543 macros
+[0m06:55:06.553417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC709FB90>]}
+[0m06:55:06.557598 [info ] [MainThread]: 
+[0m06:55:06.559607 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m06:55:06.559607 [info ] [MainThread]: 
+[0m06:55:06.562205 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m06:55:06.569931 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-challenge-manuable_raw'
+[0m06:55:06.570934 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:55:07.987238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b1fe06e-d17f-4775-b406-084f5b16ae4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDDBD99ED0>]}
+[0m06:55:07.987238 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:55:08.020516 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.stg_customers
+[0m06:55:08.020516 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.stg_order_items
+[0m06:55:08.034830 [debug] [Thread-4 (]: Began running node model.dbt_challenge_manuable.stg_products
+[0m06:55:08.020516 [debug] [Thread-3 (]: Began running node model.dbt_challenge_manuable.stg_orders
+[0m06:55:08.036501 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_customers'
+[0m06:55:08.036865 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_order_items'
+[0m06:55:08.036865 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_products'
+[0m06:55:08.036865 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_challenge_manuable.stg_orders'
+[0m06:55:08.036865 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.stg_customers
+[0m06:55:08.041187 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.stg_order_items
+[0m06:55:08.041187 [debug] [Thread-4 (]: Began compiling node model.dbt_challenge_manuable.stg_products
+[0m06:55:08.041187 [debug] [Thread-3 (]: Began compiling node model.dbt_challenge_manuable.stg_orders
+[0m06:55:08.050301 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_customers"
+[0m06:55:08.053557 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_order_items"
+[0m06:55:08.059380 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_products"
+[0m06:55:08.065415 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_challenge_manuable.stg_orders"
+[0m06:55:08.068869 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.stg_customers
+[0m06:55:08.070850 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.stg_order_items
+[0m06:55:08.070850 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m06:55:08.070850 [debug] [Thread-4 (]: Began executing node model.dbt_challenge_manuable.stg_products
+[0m06:55:08.070850 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m06:55:08.070850 [debug] [Thread-3 (]: Began executing node model.dbt_challenge_manuable.stg_orders
+[0m06:55:08.103947 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m06:55:08.103947 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.stg_customers
+[0m06:55:08.137494 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m06:55:08.137494 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.stg_order_items
+[0m06:55:08.170239 [debug] [Thread-4 (]: Finished running node model.dbt_challenge_manuable.stg_products
+[0m06:55:08.170239 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:55:08.203557 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:55:08.203557 [debug] [Thread-3 (]: Finished running node model.dbt_challenge_manuable.stg_orders
+[0m06:55:08.203557 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:55:08.203557 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_customers, now test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m06:55:08.203557 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_order_items, now test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533)
+[0m06:55:08.203557 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:55:08.220248 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_products, now test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada)
+[0m06:55:08.220248 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:55:08.220248 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:55:08.220248 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.stg_orders, now test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96)
+[0m06:55:08.220248 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:55:08.220248 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m06:55:08.237161 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533"
+[0m06:55:08.237161 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:55:08.237161 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada"
+[0m06:55:08.251546 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:55:08.252525 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96"
+[0m06:55:08.252525 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:55:08.252525 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:08.252525 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:55:08.252525 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:08.252525 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:55:08.291548 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m06:55:08.295381 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:08.336045 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533
+[0m06:55:08.338057 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:08.338057 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:55:08.378284 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada
+[0m06:55:08.378284 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:55:08.419394 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96
+[0m06:55:08.419394 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6)
+[0m06:55:08.419394 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:55:08.419394 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_customers_email.d7cf761533, now test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4)
+[0m06:55:08.419394 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:55:08.419394 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:55:08.419394 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_stg_customers_customer_id.c7614daada, now test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3)
+[0m06:55:08.419394 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:55:08.419394 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_order_id.2063801f96, now test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c)
+[0m06:55:08.435975 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6"
+[0m06:55:08.435975 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:55:08.435975 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4"
+[0m06:55:08.435975 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:55:08.435975 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3"
+[0m06:55:08.435975 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:55:08.452533 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c"
+[0m06:55:08.452533 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:55:08.452533 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:08.452533 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:55:08.452533 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:08.452533 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:55:08.492511 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:08.492511 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6
+[0m06:55:08.519379 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4
+[0m06:55:08.519379 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:08.553417 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:55:08.553417 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3
+[0m06:55:08.553417 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.int_customers
+[0m06:55:08.589536 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_order_items_product_id.5154a8a6f6, now test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467)
+[0m06:55:08.589536 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c
+[0m06:55:08.600486 [debug] [Thread-4 (]: Began running node model.dbt_challenge_manuable.int_orders
+[0m06:55:08.600486 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_price.2d147627d4, now model.dbt_challenge_manuable.int_customers)
+[0m06:55:08.602173 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:55:08.603189 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:55:08.604191 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_products_product_id.6373b0acf3, now model.dbt_challenge_manuable.int_orders)
+[0m06:55:08.605188 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.int_customers
+[0m06:55:08.606755 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467"
+[0m06:55:08.606755 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_product_id__product_id__ref_stg_products_.886a82c26c, now test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a)
+[0m06:55:08.606755 [debug] [Thread-4 (]: Began compiling node model.dbt_challenge_manuable.int_orders
+[0m06:55:08.620796 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_customers"
+[0m06:55:08.621801 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:55:08.622804 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:55:08.626797 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_challenge_manuable.int_orders"
+[0m06:55:08.631800 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a"
+[0m06:55:08.632801 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:08.633801 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.int_customers
+[0m06:55:08.635806 [debug] [Thread-4 (]: Began executing node model.dbt_challenge_manuable.int_orders
+[0m06:55:08.667799 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:55:08.667799 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467
+[0m06:55:08.667799 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:08.667799 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:08.667799 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:08.667799 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:55:08.706214 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.int_customers
+[0m06:55:08.734531 [debug] [Thread-4 (]: Finished running node model.dbt_challenge_manuable.int_orders
+[0m06:55:08.770230 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_stg_products_product_id.7d950a1467, now test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m06:55:08.772236 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a
+[0m06:55:08.772236 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:55:08.772236 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:55:08.772236 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:55:08.772236 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:55:08.772236 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.int_customers, now test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64)
+[0m06:55:08.778307 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.int_orders, now test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54)
+[0m06:55:08.782526 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m06:55:08.782526 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_stg_orders_order_status__completed__pending__cancelled.11402dd13a, now test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a)
+[0m06:55:08.782526 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:55:08.782526 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:55:08.782526 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:55:08.782526 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64"
+[0m06:55:08.782526 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:55:08.782526 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54"
+[0m06:55:08.798307 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a"
+[0m06:55:08.798307 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:08.798307 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:55:08.798307 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:55:08.830123 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:08.830123 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5
+[0m06:55:08.830123 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:55:08.830123 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:08.863415 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64
+[0m06:55:08.863415 [debug] [Thread-1 (]: Began running node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:55:08.863415 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:08.863415 [debug] [Thread-2 (]: Began running node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:55:08.908691 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54
+[0m06:55:08.909696 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_customer_id.af79d5e4b5, now model.dbt_challenge_manuable.mart_customer_ltv)
+[0m06:55:08.937011 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_stg_orders_order_id.81cfe2fe64, now model.dbt_challenge_manuable.mart_orders_summary)
+[0m06:55:08.937011 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a
+[0m06:55:08.937011 [debug] [Thread-1 (]: Began compiling node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:55:08.937011 [debug] [Thread-2 (]: Began compiling node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:55:08.948905 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_customer_ltv"
+[0m06:55:08.952660 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_challenge_manuable.mart_orders_summary"
+[0m06:55:08.952660 [debug] [Thread-1 (]: Began executing node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:55:08.952660 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:08.952660 [debug] [Thread-2 (]: Began executing node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:55:08.984344 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:08.984344 [debug] [Thread-1 (]: Finished running node model.dbt_challenge_manuable.mart_customer_ltv
+[0m06:55:09.016730 [debug] [Thread-2 (]: Finished running node model.dbt_challenge_manuable.mart_orders_summary
+[0m06:55:09.016730 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:55:09.016730 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:55:09.016730 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:55:09.016730 [debug] [Thread-2 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:55:09.016730 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.relationships_stg_order_items_order_id__order_id__ref_stg_orders_.dbe9930c54, now test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947)
+[0m06:55:09.016730 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_stg_orders_order_id.e3b841c71a, now test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b)
+[0m06:55:09.016730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.mart_customer_ltv, now test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859)
+[0m06:55:09.032392 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_challenge_manuable.mart_orders_summary, now test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e)
+[0m06:55:09.032392 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:55:09.032392 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:55:09.032392 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:55:09.032392 [debug] [Thread-2 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:55:09.032392 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947"
+[0m06:55:09.045512 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b"
+[0m06:55:09.049534 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859"
+[0m06:55:09.051550 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e"
+[0m06:55:09.051550 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:55:09.051550 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:55:09.051550 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:09.051550 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:55:09.051550 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:09.051550 [debug] [Thread-2 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:55:09.094959 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:09.094959 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947
+[0m06:55:09.127229 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:09.127229 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b
+[0m06:55:09.158919 [debug] [Thread-4 (]: Began running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:55:09.158919 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859
+[0m06:55:09.190927 [debug] [Thread-3 (]: Began running node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:55:09.190927 [debug] [Thread-2 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e
+[0m06:55:09.203404 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.accepted_values_mart_customer_ltv_customer_segment__VIP__Regular__NUEVO.dd7b251947, now test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e)
+[0m06:55:09.203404 [debug] [Thread-1 (]: Began running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:55:09.203404 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.not_null_mart_customer_ltv_customer_id.8a829db09b, now test.dbt_challenge_manuable.test_orders_revenue_positive)
+[0m06:55:09.206573 [debug] [Thread-4 (]: Began compiling node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:55:09.206573 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_challenge_manuable.unique_mart_customer_ltv_customer_id.f8ccb94859, now test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324)
+[0m06:55:09.206573 [debug] [Thread-3 (]: Began compiling node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:55:09.206573 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e"
+[0m06:55:09.206573 [debug] [Thread-1 (]: Began compiling node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:55:09.216965 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_challenge_manuable.test_orders_revenue_positive"
+[0m06:55:09.222641 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324"
+[0m06:55:09.222641 [debug] [Thread-4 (]: Began executing node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:55:09.222641 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:09.222641 [debug] [Thread-3 (]: Began executing node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:55:09.222641 [debug] [Thread-1 (]: Began executing node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:55:09.261307 [debug] [Thread-4 (]: Finished running node test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e
+[0m06:55:09.261307 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:09.262309 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:09.284247 [debug] [Thread-3 (]: Finished running node test.dbt_challenge_manuable.test_orders_revenue_positive
+[0m06:55:09.331734 [debug] [Thread-1 (]: Finished running node test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324
+[0m06:55:09.331734 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:55:09.331734 [debug] [MainThread]: Connection 'list_dbt-challenge-manuable_raw' was properly closed.
+[0m06:55:09.340362 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.unique_mart_orders_summary_order_id.032e537324' was properly closed.
+[0m06:55:09.340362 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_order_id.e09073165e' was properly closed.
+[0m06:55:09.342377 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.not_null_mart_orders_summary_total_revenue.bf18ee6a3e' was properly closed.
+[0m06:55:09.342377 [debug] [MainThread]: Connection 'test.dbt_challenge_manuable.test_orders_revenue_positive' was properly closed.
+[0m06:55:09.347584 [debug] [MainThread]: Command end result
+[0m06:55:09.458527 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m06:55:09.474266 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m06:55:09.474266 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\run_results.json
+[0m06:55:09.474266 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m06:55:09.489940 [info ] [MainThread]: Building catalog
+[0m06:55:09.489940 [debug] [ThreadPool]: Acquiring new bigquery connection 'dbt-challenge-manuable.information_schema'
+[0m06:55:09.519741 [debug] [ThreadPool]: On dbt-challenge-manuable.information_schema: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "dbt_challenge_manuable", "target_name": "dev", "connection_name": "dbt-challenge-manuable.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `dbt-challenge-manuable`.`raw`.__TABLES__ tables
+    left join `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_customers')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_order_items')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('orders')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('products')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('int_orders')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_orders')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('mart_orders_summary')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('int_customers')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('customers')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_products')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('mart_customer_ltv')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('order_items')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.COLUMNS columns
+    join `dbt-challenge-manuable`.`raw`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m06:55:09.519741 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:55:11.115741 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-challenge-manuable&j=bq:US:5a547ef5-4cc5-4bc2-86e8-2e8c7ce87fe3&page=queryresults
+[0m06:55:12.213293 [debug] [ThreadPool]: SQL status: OK in 1.100 seconds
+[0m06:55:12.617471 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:55:12.663154 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\catalog.json
+[0m06:55:12.700627 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\manifest.json
+[0m06:55:12.700627 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\semantic_manifest.json
+[0m06:55:12.700627 [info ] [MainThread]: Catalog written to C:\Users\mar_z\Desktop\dbt-challenge-manuable\target\catalog.json
+[0m06:55:12.700627 [debug] [MainThread]: Command `dbt docs generate` succeeded at 06:55:12.700627 after 11.20 seconds
+[0m06:55:12.700627 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m06:55:12.700627 [debug] [MainThread]: Connection 'dbt-challenge-manuable.information_schema' was properly closed.
+[0m06:55:12.700627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC0228950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC813EE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDC050E290>]}
+[0m06:55:12.700627 [debug] [MainThread]: Flushing usage events
+[0m06:55:13.335138 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:56:28.441882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A8BE8A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A8C16B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A8C168D0>]}
+
+
+============================== 06:56:28.441882 | c9fca858-0f35-40e5-b775-75a942ed6aea ==============================
+[0m06:56:28.441882 [info ] [MainThread]: Running with dbt=1.11.9
+[0m06:56:28.441882 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mar_z\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\mar_z\\Desktop\\dbt-challenge-manuable\\logs'}
+[0m06:56:29.851905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c9fca858-0f35-40e5-b775-75a942ed6aea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200BD17D7D0>]}
+[0m06:56:29.908908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c9fca858-0f35-40e5-b775-75a942ed6aea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A52F8B90>]}
+[0m07:04:15.022451 [error] [MainThread]: Encountered an error:
+
+[0m07:04:15.040835 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 309, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mar_z\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m07:04:15.044504 [debug] [MainThread]: Command `dbt docs serve` failed at 07:04:15.044504 after 466.70 seconds
+[0m07:04:15.044504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A8BDFD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A8BDE210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200A8BDFCD0>]}
+[0m07:04:15.044504 [debug] [MainThread]: Flushing usage events
+[0m07:04:15.699655 [debug] [MainThread]: An error was encountered while trying to flush usage events
