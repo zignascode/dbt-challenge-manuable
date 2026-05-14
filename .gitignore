@@ -1,4 +1,15 @@
+# Credenciales y secretos
+Credentials/*.json
+.env
 
+# Configuración local de dbt
+.dbt/
+
+# Archivos generados por dbt
 target/
 dbt_packages/
 logs/
+
+# Archivos temporales
+*.log
+*.tmp

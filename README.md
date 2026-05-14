@@ -17,6 +17,25 @@ Archivo de credenciales JSON (dbt-challenge-manuable-XXXX.json) configurado en p
 3. Generar y descargar el archivo JSON.
 4. Guardarlo en la carpeta Credentials/ con el nombre dbt-challenge.json.
 5. Actualizar profiles.yml para apuntar a esa ruta.
+## Configuración de perfiles dbt
+(
+  1. Copiar el archivo `profiles.yml.example` a la carpeta `.dbt` de su usuario:
+    - Windows: C:\Users\<usuario>\.dbt\
+    - Linux/Mac: ~/.dbt/
+  2. Renombrar a `profiles.yml`.
+  3. Editar el archivo y reemplazar:
+    - `<TU_PROYECTO_GCP>` por el ID de su proyecto en Google Cloud.
+    - `dataset` por el nombre del dataset que quieran usar.
+    - `location` por la región de su dataset.
+    - `keyfile` por la ruta local de su archivo JSON de credenciales.
+  4. Generar una cuenta de servicio en Google Cloud con permisos BigQuery y descargar el archivo JSON.
+  5. Guardar ese archivo en `Credentials/dbt-challenge.json`.
+  6. Ejecutar:
+    ```bash
+    dbt run
+    dbt test
+)
+
 6. Airflow 3.2.1 instalado en entorno Linux/WSL.
 7. Poblar las tablas del dataset raw, copiando el script en BigQuery
 dataset_raw.sql

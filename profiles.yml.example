@@ -1,0 +1,10 @@
+dbt_challenge_manuable:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: <TU_PROYECTO_GCP>
+      dataset: raw
+      location: US
+      keyfile: Credentials/dbt-challenge.json
