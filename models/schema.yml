@@ -75,24 +75,36 @@ models:
 
   # Test para mart_orders_summary: validación de datos procesados (+3 tests)
   - name: mart_orders_summary
+    description: "Tabla de resumen de órdenes con métricas de ingresos y volumen."
     columns:
       - name: order_id
+        description: "Identificador único de cada orden."
         tests:
           - not_null
           - unique
       - name: total_revenue
+        description: "Ingresos totales generados por la orden."
         tests:
           - not_null
 
   # Test para mart_customer_ltv: validación de datos procesados (+3 tests)
   - name: mart_customer_ltv
+    description: "Tabla de clientes con métricas de valor de vida (LTV) y segmentación."
     columns:
       - name: customer_id
+        description: "Identificador único de cada cliente."
         tests:
           - not_null
           - unique
       - name: customer_segment
+        description: "Clasificación del cliente según su comportamiento (VIP, Regular, Nuevo)."
         tests:
           - accepted_values:
               arguments:
                 values: ['VIP','Regular','NUEVO']
+      - name: total_orders
+        description: "Número total de órdenes realizadas por el cliente."
+      - name: first_order_date
+        description: "Fecha de la primera orden registrada para el cliente."
+      - name: last_order_date
+        description: "Fecha de la última orden registrada para el cliente."
